@@ -15,6 +15,7 @@
             .card-header { background-color: #343a40; color: white; font-weight: bold; }
             .highlight-red { color: white; background-color: #dc3545 !important; font-weight: bold; }
             .highlight-green { color: white; background-color: #28a745 !important; font-weight: bold; }
+            .highlight-fire { color: white; background-color: #fd7e14 !important; font-weight: bold; } 
             .strategy-box { background-color: #e9ecef; padding: 15px; border-radius: 5px; margin-bottom: 20px; border-left: 5px solid #0d6efd; }
             .strategy-title { font-weight: bold; color: #0d6efd; }
         </style>
@@ -22,37 +23,50 @@
     <body>
 
     <div class="container-fluid">
-        <h1 class="text-center mb-4">📈 交易策略信号(左侧)日报 (2026-01-09)</h1>
+        <h1 class="text-center mb-4">📈 量化交易信号日报 (2026-01-09)</h1>
         
         <div class="card">
-            <div class="card-header">策略说明书</div>
+            <div class="card-header">策略说明书 (左侧抄底 + 右侧强攻)</div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="strategy-box">
-                            <div class="strategy-title">策略1：历史大底 (Deep Bottom)</div>
-                            <p><strong>信号逻辑：</strong>如果出现 <span class="badge bg-danger">Y</span>，说明这只股票处于极度深跌状态，且近期（近3日）刚刚创下30日新低。</p>
-                            <p><strong>操作建议：</strong>这是一个<strong>左侧长线建仓信号</strong>。胜率较高，但可能需要忍受短期波动。</p>
-                        </div>
-                        <div class="strategy-box">
-                            <div class="strategy-title">策略2：波段回调 (EMA Pullback)</div>
-                            <p><strong>信号逻辑：</strong>如果出现 <span class="badge bg-success">Y</span>，说明股价跌穿了 EMA 通道的下轨。</p>
-                            <p><strong>操作建议：</strong>这是一个<strong>短线/波段反弹信号</strong>。适合抓超跌反弹。</p>
+                    <div class="col-md-4">
+                        <div class="strategy-box" style="border-left-color: #dc3545;">
+                            <div class="strategy-title" style="color: #dc3545;">策略1：大底 (Deep Bottom，左侧)</div>
+                            <p><strong>信号：</strong> <span class="badge bg-danger">Y</span></p>
+                            <p><strong>逻辑：</strong> 股票处于极度深跌状态，且近期（近3日）刚刚创下30日新低。</p>
+                            <p><strong>建议：</strong> 这是一个左侧长线建仓信号。长线胜率较高，但需忍受短期波动。</p>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="strategy-box">
-                            <div class="strategy-title">辅助指标参考</div>
-                            <ul>
-                                <li><strong>BBI & MA60：</strong> 如果发出买入信号，但股价还在 BBI 和 MA60 下方很远，说明是逆势抄底，风险较高但赔率大。如果股价站上了 BBI，说明短期趋势开始转强。</li>
-                                <li><strong>波动率(%)：</strong> 
-                                    <ul>
-                                        <li>蓝筹股通常在 20%-30%。</li>
-                                        <li>妖股或高风险股可能 > 50%。</li>
-                                        <li><strong>用法：</strong>如果信号出现时波动率极高(>60%)，说明市场极度恐慌，抄底仓位要小。</li>
-                                    </ul>
-                                </li>
-                            </ul>
+                    <div class="col-md-4">
+                        <div class="strategy-box" style="border-left-color: #28a745;">
+                            <div class="strategy-title" style="color: #28a745;">策略2：波段(EMA Pullback,左侧)</div>
+                            <p><strong>信号：</strong> <span class="badge bg-success">Y</span></p>
+                            <p><strong>逻辑：</strong> 股价跌穿了 EMA 通道的下轨道。</p>
+                            <p><strong>建议：</strong> 如果股价和通道拟合度高，这是一个短线/波段反弹信号，适合快进快出。</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="strategy-box" style="border-left-color: #fd7e14;">
+                            <div class="strategy-title" style="color: #fd7e14;">策略3：主升浪 (Main Wave Pro,右侧)</div>
+                            <p><strong>信号：</strong> <span class="badge bg-warning text-dark">🔥</span></p>
+                            <p><strong>逻辑：</strong> 20日线大角度上扬(>25度) + 多头排列 + 放量大阳。</p>
+                            <p><strong>建议：</strong> <strong>确定性较高</strong>。趋势确认，适合追涨吃主升浪。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div class="strategy-box" style="border-left-color: #6c757d; background-color: #f1f3f5;">
+                            <div class="strategy-title" style="color: #6c757d;">🛠️ 辅助指标参考</div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p><strong>🔵 BBI & MA60：</strong> 多空分界线。如果股价在 BBI和MA60 下方很远，属于逆势抄底（左侧）；如果站上 BBI，说明短期趋势转强（右侧）。可结合BBI上穿和下插MA60线进行判断。</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><strong>⚡ 波动率(%)：</strong> 蓝筹股通常在 20-30%，妖股 >50%。<strong>注意：</strong>如果大底信号出现时波动率极高(>60%)，说明市场极度恐慌，风险较大，仓位要轻。</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -60,18 +74,25 @@
         </div>
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
                         <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="e8cd5355-9e78-430d-80f9-1a085f932a8f" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("e8cd5355-9e78-430d-80f9-1a085f932a8f")) {                    Plotly.newPlot(                        "e8cd5355-9e78-430d-80f9-1a085f932a8f",                        [{"hovertemplate":"color=\u7b56\u75651(\u5927\u5e95)\u003cbr\u003e\u7b56\u7565\u7c7b\u578b=%{x}\u003cbr\u003e\u89e6\u53d1\u6570\u91cf=%{y}\u003cbr\u003etext=%{text}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"\u7b56\u75651(\u5927\u5e95)","marker":{"color":"#636efa","pattern":{"shape":""}},"name":"\u7b56\u75651(\u5927\u5e95)","orientation":"v","showlegend":true,"text":{"dtype":"f8","bdata":"AAAAAAAANkA="},"textposition":"auto","x":["\u7b56\u75651(\u5927\u5e95)"],"xaxis":"x","y":{"dtype":"i1","bdata":"Fg=="},"yaxis":"y","type":"bar"},{"hovertemplate":"color=\u7b56\u75652(\u6ce2\u6bb5)\u003cbr\u003e\u7b56\u7565\u7c7b\u578b=%{x}\u003cbr\u003e\u89e6\u53d1\u6570\u91cf=%{y}\u003cbr\u003etext=%{text}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"\u7b56\u75652(\u6ce2\u6bb5)","marker":{"color":"#EF553B","pattern":{"shape":""}},"name":"\u7b56\u75652(\u6ce2\u6bb5)","orientation":"v","showlegend":true,"text":{"dtype":"f8","bdata":"AAAAAAAALkA="},"textposition":"auto","x":["\u7b56\u75652(\u6ce2\u6bb5)"],"xaxis":"x","y":{"dtype":"i1","bdata":"Dw=="},"yaxis":"y","type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"\u7b56\u7565\u7c7b\u578b"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"\u89e6\u53d1\u6570\u91cf"}},"legend":{"title":{"text":"color"},"tracegroupgap":0},"title":{"text":"\u4eca\u65e5\u4fe1\u53f7\u89e6\u53d1\u6570\u91cf (\u603b\u626b\u63cf: 560\u53ea)"},"barmode":"relative","height":400},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="03248985-ca25-4abc-93b4-e6ea95e88f49" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("03248985-ca25-4abc-93b4-e6ea95e88f49")) {                    Plotly.newPlot(                        "03248985-ca25-4abc-93b4-e6ea95e88f49",                        [{"hovertemplate":"color=\u7b56\u75651(\u5de6\u4fa7\u5927\u5e95)\u003cbr\u003e\u7b56\u7565\u7c7b\u578b=%{x}\u003cbr\u003e\u89e6\u53d1\u6570\u91cf=%{y}\u003cbr\u003etext=%{text}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"\u7b56\u75651(\u5de6\u4fa7\u5927\u5e95)","marker":{"color":"#636efa","pattern":{"shape":""}},"name":"\u7b56\u75651(\u5de6\u4fa7\u5927\u5e95)","orientation":"v","showlegend":true,"text":{"dtype":"f8","bdata":"AAAAAAAAN0A="},"textposition":"auto","x":["\u7b56\u75651(\u5de6\u4fa7\u5927\u5e95)"],"xaxis":"x","y":{"dtype":"i1","bdata":"Fw=="},"yaxis":"y","type":"bar"},{"hovertemplate":"color=\u7b56\u75652(\u5de6\u4fa7\u6ce2\u6bb5)\u003cbr\u003e\u7b56\u7565\u7c7b\u578b=%{x}\u003cbr\u003e\u89e6\u53d1\u6570\u91cf=%{y}\u003cbr\u003etext=%{text}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"\u7b56\u75652(\u5de6\u4fa7\u6ce2\u6bb5)","marker":{"color":"#EF553B","pattern":{"shape":""}},"name":"\u7b56\u75652(\u5de6\u4fa7\u6ce2\u6bb5)","orientation":"v","showlegend":true,"text":{"dtype":"f8","bdata":"AAAAAAAALkA="},"textposition":"auto","x":["\u7b56\u75652(\u5de6\u4fa7\u6ce2\u6bb5)"],"xaxis":"x","y":{"dtype":"i1","bdata":"Dw=="},"yaxis":"y","type":"bar"},{"hovertemplate":"color=\u7b56\u75653(\u53f3\u4fa7\u4e3b\u5347)\u003cbr\u003e\u7b56\u7565\u7c7b\u578b=%{x}\u003cbr\u003e\u89e6\u53d1\u6570\u91cf=%{y}\u003cbr\u003etext=%{text}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"\u7b56\u75653(\u53f3\u4fa7\u4e3b\u5347)","marker":{"color":"#00cc96","pattern":{"shape":""}},"name":"\u7b56\u75653(\u53f3\u4fa7\u4e3b\u5347)","orientation":"v","showlegend":true,"text":{"dtype":"f8","bdata":"AAAAAAAAO0A="},"textposition":"auto","x":["\u7b56\u75653(\u53f3\u4fa7\u4e3b\u5347)"],"xaxis":"x","y":{"dtype":"i1","bdata":"Gw=="},"yaxis":"y","type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"\u7b56\u7565\u7c7b\u578b"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"\u89e6\u53d1\u6570\u91cf"}},"legend":{"title":{"text":"color"},"tracegroupgap":0},"title":{"text":"\u4eca\u65e5\u4fe1\u53f7\u89e6\u53d1\u6570\u91cf (\u603b\u626b\u63cf: 561\u53ea)"},"barmode":"relative","height":400},                        {"responsive": true}                    )                };            </script>        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
-                        <div>                            <div id="3949ceb2-485c-4feb-9faf-5a93804f143f" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("3949ceb2-485c-4feb-9faf-5a93804f143f")) {                    Plotly.newPlot(                        "3949ceb2-485c-4feb-9faf-5a93804f143f",                        [{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"hovertemplate":"\u4e3b\u8425\u884c\u4e1a=%{label}\u003cbr\u003e\u6570\u91cf=%{value}\u003cextra\u003e\u003c\u002fextra\u003e","labels":["\u91d1\u878d","\u516c\u7528\u4e8b\u4e1a","\u98df\u54c1\u996e\u6599","\u4ea4\u901a\u8fd0\u8f93","\u7535\u5b50\u8bbe\u5907","\u7535\u6c14\u8bbe\u5907","\u7eba\u7ec7\u670d\u88c5","\u6709\u8272\u91d1\u5c5e","\u533b\u836f\u751f\u7269","\u5bb6\u7535","\u4fe1\u606f\u6280\u672f"],"legendgroup":"","name":"","showlegend":true,"values":{"dtype":"i1","bdata":"CAQEAwMCAQEBAQE="},"type":"pie"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"legend":{"tracegroupgap":0},"title":{"text":"\u89e6\u53d1\u5927\u5e95\u4fe1\u53f7\u4e2a\u80a1\u7684\u884c\u4e1a\u5206\u5e03"},"height":400},                        {"responsive": true}                    )                };            </script>        </div>
+                        <div>                            <div id="3fc86d36-2023-4abb-842f-a07b9c441054" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("3fc86d36-2023-4abb-842f-a07b9c441054")) {                    Plotly.newPlot(                        "3fc86d36-2023-4abb-842f-a07b9c441054",                        [{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"hovertemplate":"\u4e3b\u8425\u884c\u4e1a=%{label}\u003cbr\u003e\u6570\u91cf=%{value}\u003cextra\u003e\u003c\u002fextra\u003e","labels":["\u91d1\u878d","\u516c\u7528\u4e8b\u4e1a","\u98df\u54c1\u996e\u6599","\u4ea4\u901a\u8fd0\u8f93","\u7eba\u7ec7\u670d\u88c5","\u7535\u5b50\u8bbe\u5907","\u533b\u836f\u751f\u7269","\u5bb6\u7535","\u4fe1\u606f\u6280\u672f"],"legendgroup":"","name":"","showlegend":true,"values":{"dtype":"i1","bdata":"CAQDAwEBAQEB"},"type":"pie"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"legend":{"tracegroupgap":0},"title":{"text":"\u7b56\u75651(\u5927\u5e95) \u884c\u4e1a\u5206\u5e03"},"height":400},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div>                            <div id="c458233c-a2bb-4339-b3cf-65a67f4bd4e0" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("c458233c-a2bb-4339-b3cf-65a67f4bd4e0")) {                    Plotly.newPlot(                        "c458233c-a2bb-4339-b3cf-65a67f4bd4e0",                        [{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"hovertemplate":"\u4e3b\u8425\u884c\u4e1a=%{label}\u003cbr\u003e\u6570\u91cf=%{value}\u003cextra\u003e\u003c\u002fextra\u003e","labels":["\u6709\u8272\u91d1\u5c5e","\u7535\u5b50\u8bbe\u5907","\u4fe1\u606f\u6280\u672f","\u56fd\u9632\u4e0e\u88c5\u5907","\u57fa\u7840\u5316\u5de5","\u533b\u836f\u751f\u7269","\u4e92\u8054\u7f51","\u673a\u68b0\u8bbe\u5907","\u7535\u6c14\u8bbe\u5907","\u7efc\u5408","\u5546\u8d38\u96f6\u552e"],"legendgroup":"","name":"","showlegend":true,"values":{"dtype":"i1","bdata":"BwUEAwIBAQEBAQE="},"type":"pie"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"legend":{"tracegroupgap":0},"title":{"text":"\ud83d\udd25\u7b56\u75653(\u4e3b\u5347\u6d6a) \u884c\u4e1a\u5206\u5e03"},"height":400},                        {"responsive": true}                    )                };            </script>        </div>
                     </div>
                 </div>
             </div>
@@ -83,7 +104,7 @@
             </div>
             <div class="card-body">
                 <div class="table-responsive">
-                    <table border="1" class="dataframe display table table-striped table-bordered" id="stockTable">
+                    <table class="dataframe display table table-striped table-bordered" id="stockTable">
   <thead>
     <tr style="text-align: right;">
       <th>股票代码</th>
@@ -95,6 +116,7 @@
       <th>收盘价</th>
       <th>策略1</th>
       <th>策略2</th>
+      <th>策略3</th>
       <th>BBI</th>
       <th>MA60</th>
       <th>波动率</th>
@@ -111,6 +133,7 @@
       <td>11.46</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>11.53</td>
       <td>11.55</td>
       <td>11.15</td>
@@ -123,6 +146,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>4.96</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>4.83</td>
@@ -139,6 +163,7 @@
       <td>10.25</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>10.11</td>
       <td>10.51</td>
       <td>21.15</td>
@@ -151,6 +176,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>21.77</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>20.52</td>
@@ -167,6 +193,7 @@
       <td>41.10</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>39.55</td>
       <td>40.37</td>
       <td>22.96</td>
@@ -179,6 +206,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>5.79</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>5.68</td>
@@ -195,6 +223,7 @@
       <td>9.70</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>9.70</td>
       <td>8.84</td>
       <td>41.80</td>
@@ -207,6 +236,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>40.23</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>38.94</td>
@@ -223,6 +253,7 @@
       <td>15.11</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>14.68</td>
       <td>15.30</td>
       <td>23.62</td>
@@ -235,6 +266,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>2.60</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>2.56</td>
@@ -251,6 +283,7 @@
       <td>4.76</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>4.64</td>
       <td>4.36</td>
       <td>39.36</td>
@@ -263,6 +296,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>8.57</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>8.41</td>
@@ -279,6 +313,7 @@
       <td>5.35</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>5.33</td>
       <td>5.30</td>
       <td>18.96</td>
@@ -291,6 +326,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>10.67</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>10.62</td>
@@ -307,6 +343,7 @@
       <td>79.77</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>79.21</td>
       <td>77.89</td>
       <td>11.34</td>
@@ -319,6 +356,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>18.34</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>17.68</td>
@@ -335,6 +373,7 @@
       <td>27.72</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>26.81</td>
       <td>26.45</td>
       <td>27.01</td>
@@ -347,6 +386,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>87.21</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>85.50</td>
@@ -363,6 +403,7 @@
       <td>4.21</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>4.08</td>
       <td>3.76</td>
       <td>30.23</td>
@@ -375,6 +416,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>49.94</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>49.65</td>
@@ -391,6 +433,7 @@
       <td>11.80</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>11.45</td>
       <td>10.83</td>
       <td>32.32</td>
@@ -403,6 +446,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>42.27</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>39.05</td>
@@ -419,6 +463,7 @@
       <td>19.66</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>18.64</td>
       <td>18.33</td>
       <td>24.00</td>
@@ -431,6 +476,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>57.32</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>56.98</td>
@@ -447,6 +493,7 @@
       <td>37.78</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>32.47</td>
       <td>16.84</td>
       <td>75.48</td>
@@ -461,6 +508,7 @@
       <td>116.86</td>
       <td>Y</td>
       <td>Y</td>
+      <td></td>
       <td>118.24</td>
       <td>129.22</td>
       <td>14.01</td>
@@ -475,6 +523,7 @@
       <td>137.68</td>
       <td></td>
       <td>Y</td>
+      <td></td>
       <td>138.55</td>
       <td>152.85</td>
       <td>23.00</td>
@@ -487,6 +536,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>9.79</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>9.54</td>
@@ -503,6 +553,7 @@
       <td>20.21</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>20.01</td>
       <td>20.07</td>
       <td>23.70</td>
@@ -515,6 +566,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>11.85</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>11.86</td>
@@ -531,6 +583,7 @@
       <td>3.58</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>3.33</td>
       <td>3.10</td>
       <td>41.12</td>
@@ -543,6 +596,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>5.91</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>5.77</td>
@@ -559,6 +613,7 @@
       <td>40.48</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>40.59</td>
       <td>40.55</td>
       <td>8.62</td>
@@ -571,6 +626,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>97.90</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>95.48</td>
@@ -587,6 +643,7 @@
       <td>7.55</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>7.49</td>
       <td>7.00</td>
       <td>33.72</td>
@@ -599,6 +656,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>15.89</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>15.87</td>
@@ -615,6 +673,7 @@
       <td>4.41</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>4.28</td>
       <td>4.06</td>
       <td>29.15</td>
@@ -627,6 +686,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>56.88</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>53.81</td>
@@ -643,6 +703,7 @@
       <td>23.33</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>21.76</td>
       <td>19.61</td>
       <td>34.27</td>
@@ -655,6 +716,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>29.97</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>27.27</td>
@@ -671,6 +733,7 @@
       <td>22.31</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>22.38</td>
       <td>22.18</td>
       <td>31.80</td>
@@ -683,6 +746,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>25.87</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>25.33</td>
@@ -699,6 +763,7 @@
       <td>31.28</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>30.05</td>
       <td>26.14</td>
       <td>53.87</td>
@@ -711,6 +776,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>33.53</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>32.21</td>
@@ -727,6 +793,7 @@
       <td>21.08</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>19.98</td>
       <td>20.53</td>
       <td>29.19</td>
@@ -739,6 +806,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>16.94</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>16.63</td>
@@ -755,6 +823,7 @@
       <td>52.04</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>48.78</td>
       <td>48.72</td>
       <td>36.62</td>
@@ -767,6 +836,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>107.14</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>107.95</td>
@@ -783,6 +853,7 @@
       <td>9.26</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>9.22</td>
       <td>9.47</td>
       <td>10.07</td>
@@ -797,6 +868,7 @@
       <td>22.18</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>20.23</td>
       <td>18.01</td>
       <td>48.19</td>
@@ -809,6 +881,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>23.09</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>22.86</td>
@@ -825,6 +898,7 @@
       <td>25.90</td>
       <td>Y</td>
       <td></td>
+      <td></td>
       <td>26.30</td>
       <td>26.48</td>
       <td>11.44</td>
@@ -837,6 +911,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>5.62</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>5.59</td>
@@ -853,6 +928,7 @@
       <td>30.08</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>28.53</td>
       <td>25.77</td>
       <td>38.41</td>
@@ -865,6 +941,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>25.91</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>25.26</td>
@@ -881,6 +958,7 @@
       <td>33.82</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>30.05</td>
       <td>25.31</td>
       <td>57.24</td>
@@ -893,6 +971,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>39.63</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>39.61</td>
@@ -909,6 +988,7 @@
       <td>7.13</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>7.17</td>
       <td>6.85</td>
       <td>19.02</td>
@@ -921,6 +1001,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>25.44</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>24.71</td>
@@ -937,6 +1018,7 @@
       <td>68.90</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>66.85</td>
       <td>63.80</td>
       <td>32.83</td>
@@ -949,6 +1031,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>6.99</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>6.78</td>
@@ -965,6 +1048,7 @@
       <td>83.03</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>81.19</td>
       <td>77.56</td>
       <td>46.89</td>
@@ -977,6 +1061,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>9.55</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>9.48</td>
@@ -993,6 +1078,7 @@
       <td>29.10</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>28.75</td>
       <td>28.80</td>
       <td>9.71</td>
@@ -1005,6 +1091,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>11.32</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>11.03</td>
@@ -1021,6 +1108,7 @@
       <td>9.80</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>9.87</td>
       <td>10.09</td>
       <td>12.31</td>
@@ -1033,6 +1121,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>9.18</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>8.93</td>
@@ -1049,6 +1138,7 @@
       <td>25.55</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>25.31</td>
       <td>24.49</td>
       <td>14.67</td>
@@ -1061,6 +1151,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>15.65</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>15.40</td>
@@ -1077,6 +1168,7 @@
       <td>44.40</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>42.18</td>
       <td>39.10</td>
       <td>46.19</td>
@@ -1091,9 +1183,25 @@
       <td>65.76</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>55.29</td>
       <td>45.87</td>
       <td>58.45</td>
+    </tr>
+    <tr>
+      <td>002027</td>
+      <td>分众传媒</td>
+      <td>互联网</td>
+      <td>上海市</td>
+      <td>沪深300</td>
+      <td>2026-01-09</td>
+      <td>7.71</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>7.41</td>
+      <td>7.40</td>
+      <td>21.64</td>
     </tr>
     <tr>
       <td>002028</td>
@@ -1103,6 +1211,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>159.55</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>154.18</td>
@@ -1119,6 +1228,7 @@
       <td>6.13</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>5.51</td>
       <td>5.35</td>
       <td>71.05</td>
@@ -1131,6 +1241,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>57.14</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>52.92</td>
@@ -1147,6 +1258,7 @@
       <td>12.00</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>11.18</td>
       <td>9.68</td>
       <td>35.14</td>
@@ -1159,6 +1271,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>9.86</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>9.47</td>
@@ -1175,6 +1288,7 @@
       <td>41.03</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>40.17</td>
       <td>40.66</td>
       <td>25.67</td>
@@ -1187,6 +1301,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>15.70</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>15.68</td>
@@ -1203,6 +1318,7 @@
       <td>16.48</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>16.08</td>
       <td>16.16</td>
       <td>26.06</td>
@@ -1215,6 +1331,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>9.05</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>9.05</td>
@@ -1231,6 +1348,7 @@
       <td>6.93</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>6.87</td>
       <td>7.10</td>
       <td>12.90</td>
@@ -1243,6 +1361,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>29.80</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>28.83</td>
@@ -1259,6 +1378,7 @@
       <td>8.86</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>8.81</td>
       <td>9.20</td>
       <td>26.59</td>
@@ -1271,6 +1391,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>27.97</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>27.16</td>
@@ -1287,6 +1408,7 @@
       <td>7.46</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>6.20</td>
       <td>5.24</td>
       <td>61.71</td>
@@ -1299,6 +1421,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>37.30</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>36.15</td>
@@ -1315,6 +1438,7 @@
       <td>28.15</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>28.44</td>
       <td>28.21</td>
       <td>18.95</td>
@@ -1327,6 +1451,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>5.04</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>4.99</td>
@@ -1343,6 +1468,7 @@
       <td>13.71</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>13.25</td>
       <td>12.63</td>
       <td>24.29</td>
@@ -1355,6 +1481,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>22.97</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>21.93</td>
@@ -1371,6 +1498,7 @@
       <td>41.83</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>39.24</td>
       <td>38.67</td>
       <td>35.45</td>
@@ -1383,6 +1511,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>10.10</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>9.93</td>
@@ -1399,6 +1528,7 @@
       <td>38.89</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>36.47</td>
       <td>35.29</td>
       <td>33.64</td>
@@ -1411,6 +1541,7 @@
       <td>上证50/深证50</td>
       <td>2026-01-09</td>
       <td>21.53</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>20.62</td>
@@ -1427,6 +1558,7 @@
       <td>11.71</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>11.30</td>
       <td>11.45</td>
       <td>21.29</td>
@@ -1439,6 +1571,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>10.35</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>8.56</td>
@@ -1455,6 +1588,7 @@
       <td>31.94</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>24.13</td>
       <td>17.01</td>
       <td>85.61</td>
@@ -1469,9 +1603,25 @@
       <td>40.36</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>38.33</td>
       <td>36.39</td>
       <td>29.03</td>
+    </tr>
+    <tr>
+      <td>002230</td>
+      <td>科大讯飞</td>
+      <td>信息技术</td>
+      <td>合肥市</td>
+      <td>沪深300</td>
+      <td>2026-01-09</td>
+      <td>55.60</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>52.13</td>
+      <td>51.01</td>
+      <td>32.30</td>
     </tr>
     <tr>
       <td>002236</td>
@@ -1481,6 +1631,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>19.68</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>19.22</td>
@@ -1497,6 +1648,7 @@
       <td>29.92</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>29.26</td>
       <td>30.02</td>
       <td>30.03</td>
@@ -1509,6 +1661,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>10.34</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>10.13</td>
@@ -1525,6 +1678,7 @@
       <td>18.07</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>17.71</td>
       <td>17.25</td>
       <td>34.79</td>
@@ -1537,6 +1691,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>6.47</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>6.42</td>
@@ -1553,6 +1708,7 @@
       <td>4.54</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>4.31</td>
       <td>4.25</td>
       <td>28.63</td>
@@ -1565,6 +1721,7 @@
       <td>上证50/深证50</td>
       <td>2026-01-09</td>
       <td>14.64</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>14.02</td>
@@ -1581,6 +1738,7 @@
       <td>25.63</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>25.25</td>
       <td>24.46</td>
       <td>27.87</td>
@@ -1593,6 +1751,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>72.19</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>70.36</td>
@@ -1609,6 +1768,7 @@
       <td>9.99</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>9.33</td>
       <td>8.99</td>
       <td>45.65</td>
@@ -1621,6 +1781,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>54.66</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>53.51</td>
@@ -1637,9 +1798,25 @@
       <td>62.60</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>62.21</td>
       <td>66.09</td>
       <td>16.34</td>
+    </tr>
+    <tr>
+      <td>002311</td>
+      <td>海大集团</td>
+      <td>农林牧渔</td>
+      <td>广州市</td>
+      <td>沪深300</td>
+      <td>2026-01-09</td>
+      <td>53.51</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>54.05</td>
+      <td>56.29</td>
+      <td>26.35</td>
     </tr>
     <tr>
       <td>002312</td>
@@ -1649,6 +1826,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>11.34</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>11.23</td>
@@ -1665,6 +1843,7 @@
       <td>28.98</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>28.17</td>
       <td>25.99</td>
       <td>34.89</td>
@@ -1677,6 +1856,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>8.77</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>8.48</td>
@@ -1693,6 +1873,7 @@
       <td>38.97</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>38.60</td>
       <td>39.13</td>
       <td>13.60</td>
@@ -1705,6 +1886,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>76.40</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>73.25</td>
@@ -1721,9 +1903,25 @@
       <td>497.50</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>485.22</td>
       <td>435.29</td>
       <td>36.83</td>
+    </tr>
+    <tr>
+      <td>002384</td>
+      <td>东山精密</td>
+      <td>电子设备</td>
+      <td>苏州市</td>
+      <td>沪深300</td>
+      <td>2026-01-09</td>
+      <td>81.46</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>82.09</td>
+      <td>74.81</td>
+      <td>60.09</td>
     </tr>
     <tr>
       <td>002389</td>
@@ -1735,6 +1933,7 @@
       <td>27.41</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>24.81</td>
       <td>22.67</td>
       <td>44.71</td>
@@ -1747,6 +1946,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>10.45</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>9.70</td>
@@ -1763,6 +1963,7 @@
       <td>32.93</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>33.34</td>
       <td>30.69</td>
       <td>76.67</td>
@@ -1775,6 +1976,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>86.80</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>80.71</td>
@@ -1791,6 +1993,7 @@
       <td>13.13</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>12.70</td>
       <td>13.20</td>
       <td>16.78</td>
@@ -1803,6 +2006,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>16.23</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>15.48</td>
@@ -1819,6 +2023,7 @@
       <td>30.26</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>29.92</td>
       <td>30.82</td>
       <td>16.01</td>
@@ -1831,6 +2036,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>33.84</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>31.59</td>
@@ -1847,6 +2053,7 @@
       <td>41.75</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>40.93</td>
       <td>41.06</td>
       <td>18.33</td>
@@ -1859,6 +2066,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>22.49</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>21.77</td>
@@ -1875,6 +2083,7 @@
       <td>37.22</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>35.53</td>
       <td>32.61</td>
       <td>47.77</td>
@@ -1887,6 +2096,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>11.03</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>10.83</td>
@@ -1903,6 +2113,7 @@
       <td>11.78</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>11.71</td>
       <td>12.60</td>
       <td>28.20</td>
@@ -1915,6 +2126,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>65.39</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>65.13</td>
@@ -1931,6 +2143,7 @@
       <td>70.00</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>72.34</td>
       <td>70.06</td>
       <td>52.73</td>
@@ -1943,6 +2156,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>20.00</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>17.42</td>
@@ -1959,6 +2173,7 @@
       <td>58.63</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>57.16</td>
       <td>53.92</td>
       <td>42.75</td>
@@ -1971,6 +2186,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>46.33</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>45.20</td>
@@ -1987,6 +2203,7 @@
       <td>55.65</td>
       <td>Y</td>
       <td></td>
+      <td></td>
       <td>57.33</td>
       <td>58.82</td>
       <td>38.26</td>
@@ -1999,6 +2216,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>11.61</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>11.35</td>
@@ -2015,6 +2233,7 @@
       <td>23.12</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>23.90</td>
       <td>21.48</td>
       <td>57.28</td>
@@ -2027,6 +2246,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>25.23</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>23.54</td>
@@ -2043,6 +2263,7 @@
       <td>18.13</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>16.79</td>
       <td>13.87</td>
       <td>47.57</td>
@@ -2055,6 +2276,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>38.39</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>35.36</td>
@@ -2071,6 +2293,7 @@
       <td>27.29</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>25.06</td>
       <td>21.58</td>
       <td>41.84</td>
@@ -2083,6 +2306,7 @@
       <td>上证50/深证50</td>
       <td>2026-01-09</td>
       <td>46.80</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>45.09</td>
@@ -2099,6 +2323,7 @@
       <td>13.73</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>13.71</td>
       <td>13.54</td>
       <td>16.51</td>
@@ -2111,6 +2336,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>97.01</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>97.30</td>
@@ -2127,6 +2353,7 @@
       <td>84.10</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>83.91</td>
       <td>72.45</td>
       <td>41.59</td>
@@ -2139,6 +2366,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>16.66</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>16.01</td>
@@ -2155,6 +2383,7 @@
       <td>20.39</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>19.77</td>
       <td>18.57</td>
       <td>27.38</td>
@@ -2167,6 +2396,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>17.91</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>17.58</td>
@@ -2183,6 +2413,7 @@
       <td>2.87</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>2.74</td>
       <td>2.68</td>
       <td>48.96</td>
@@ -2197,6 +2428,7 @@
       <td>17.55</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>16.57</td>
       <td>15.87</td>
       <td>32.28</td>
@@ -2211,9 +2443,25 @@
       <td>55.41</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>50.98</td>
       <td>47.40</td>
       <td>42.50</td>
+    </tr>
+    <tr>
+      <td>002648</td>
+      <td>卫星化学</td>
+      <td>基础化工</td>
+      <td>嘉兴市</td>
+      <td>沪深300</td>
+      <td>2026-01-09</td>
+      <td>18.52</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>18.00</td>
+      <td>17.42</td>
+      <td>23.15</td>
     </tr>
     <tr>
       <td>002701</td>
@@ -2223,6 +2471,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>6.04</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>5.98</td>
@@ -2239,6 +2488,7 @@
       <td>44.44</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>44.44</td>
       <td>40.84</td>
       <td>60.86</td>
@@ -2251,6 +2501,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>49.76</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>49.93</td>
@@ -2267,6 +2518,7 @@
       <td>13.45</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>13.38</td>
       <td>13.46</td>
       <td>23.17</td>
@@ -2279,6 +2531,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>80.30</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>79.56</td>
@@ -2295,6 +2548,7 @@
       <td>11.45</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>11.34</td>
       <td>11.25</td>
       <td>23.43</td>
@@ -2307,6 +2561,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>53.83</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>53.19</td>
@@ -2323,6 +2578,7 @@
       <td>53.81</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>54.31</td>
       <td>49.98</td>
       <td>71.23</td>
@@ -2335,6 +2591,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>103.97</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>97.96</td>
@@ -2351,6 +2608,7 @@
       <td>102.19</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>102.14</td>
       <td>80.99</td>
       <td>66.81</td>
@@ -2363,6 +2621,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>40.45</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>39.67</td>
@@ -2379,6 +2638,7 @@
       <td>100.81</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>93.09</td>
       <td>79.09</td>
       <td>66.58</td>
@@ -2391,6 +2651,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>52.74</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>52.66</td>
@@ -2407,6 +2668,7 @@
       <td>232.25</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>231.57</td>
       <td>211.73</td>
       <td>63.03</td>
@@ -2419,6 +2681,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>134.65</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>128.73</td>
@@ -2435,6 +2698,7 @@
       <td>53.42</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>52.25</td>
       <td>49.84</td>
       <td>41.57</td>
@@ -2447,6 +2711,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>3.90</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>3.85</td>
@@ -2463,6 +2728,7 @@
       <td>27.28</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>26.53</td>
       <td>27.27</td>
       <td>24.96</td>
@@ -2475,6 +2741,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>12.31</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>11.68</td>
@@ -2491,6 +2758,7 @@
       <td>19.45</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>17.93</td>
       <td>16.70</td>
       <td>72.23</td>
@@ -2503,6 +2771,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>14.57</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>14.06</td>
@@ -2519,6 +2788,7 @@
       <td>69.24</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>69.27</td>
       <td>74.95</td>
       <td>34.92</td>
@@ -2531,6 +2801,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>11.42</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>11.24</td>
@@ -2547,6 +2818,7 @@
       <td>11.31</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>10.58</td>
       <td>10.66</td>
       <td>24.30</td>
@@ -2559,6 +2831,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>18.60</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>18.14</td>
@@ -2575,6 +2848,7 @@
       <td>355.60</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>341.55</td>
       <td>335.64</td>
       <td>51.93</td>
@@ -2587,6 +2861,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>55.47</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>53.03</td>
@@ -2603,6 +2878,7 @@
       <td>45.01</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>41.49</td>
       <td>36.19</td>
       <td>54.52</td>
@@ -2615,6 +2891,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>17.18</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>12.89</td>
@@ -2631,6 +2908,7 @@
       <td>24.13</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>23.86</td>
       <td>24.13</td>
       <td>29.06</td>
@@ -2643,6 +2921,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>16.67</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>16.31</td>
@@ -2659,6 +2938,7 @@
       <td>4.05</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>3.99</td>
       <td>4.21</td>
       <td>16.12</td>
@@ -2671,6 +2951,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>60.94</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>59.67</td>
@@ -2687,6 +2968,7 @@
       <td>9.71</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>9.40</td>
       <td>9.34</td>
       <td>46.36</td>
@@ -2699,6 +2981,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>6.27</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>6.12</td>
@@ -2715,6 +2998,7 @@
       <td>16.98</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>15.30</td>
       <td>12.06</td>
       <td>106.55</td>
@@ -2727,6 +3011,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>19.80</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>19.39</td>
@@ -2743,6 +3028,7 @@
       <td>78.30</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>76.36</td>
       <td>74.01</td>
       <td>27.77</td>
@@ -2755,6 +3041,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>75.15</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>61.60</td>
@@ -2771,6 +3058,7 @@
       <td>12.12</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>11.38</td>
       <td>11.73</td>
       <td>30.96</td>
@@ -2783,6 +3071,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>8.32</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>8.24</td>
@@ -2799,6 +3088,7 @@
       <td>25.62</td>
       <td></td>
       <td>Y</td>
+      <td></td>
       <td>26.75</td>
       <td>30.19</td>
       <td>55.79</td>
@@ -2811,6 +3101,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>117.75</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>114.20</td>
@@ -2827,6 +3118,7 @@
       <td>17.31</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>16.68</td>
       <td>16.52</td>
       <td>20.25</td>
@@ -2841,6 +3133,7 @@
       <td>10.81</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>9.26</td>
       <td>8.60</td>
       <td>71.06</td>
@@ -2853,6 +3146,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>169.05</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>171.83</td>
@@ -2869,23 +3163,10 @@
       <td>33.88</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>29.17</td>
       <td>24.59</td>
       <td>87.93</td>
-    </tr>
-    <tr>
-      <td>300308</td>
-      <td>中际旭创</td>
-      <td>信息技术</td>
-      <td>烟台市</td>
-      <td>沪深300</td>
-      <td>2026-01-09</td>
-      <td>583.20</td>
-      <td></td>
-      <td></td>
-      <td>605.55</td>
-      <td>529.14</td>
-      <td>54.17</td>
     </tr>
     <tr>
       <td>300316</td>
@@ -2895,6 +3176,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>38.56</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>37.89</td>
@@ -2911,6 +3193,7 @@
       <td>52.33</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>50.60</td>
       <td>54.33</td>
       <td>29.22</td>
@@ -2925,6 +3208,7 @@
       <td>58.30</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>50.21</td>
       <td>41.90</td>
       <td>80.71</td>
@@ -2937,6 +3221,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>60.19</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>57.52</td>
@@ -2953,6 +3238,7 @@
       <td>15.13</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>13.56</td>
       <td>13.08</td>
       <td>37.46</td>
@@ -2965,6 +3251,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>51.49</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>53.49</td>
@@ -2981,6 +3268,7 @@
       <td>199.00</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>205.52</td>
       <td>183.47</td>
       <td>54.40</td>
@@ -2993,6 +3281,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>95.63</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>98.05</td>
@@ -3009,6 +3298,7 @@
       <td>47.70</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>46.31</td>
       <td>46.52</td>
       <td>35.94</td>
@@ -3021,6 +3311,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>26.34</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>24.80</td>
@@ -3037,6 +3328,7 @@
       <td>54.02</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>44.39</td>
       <td>42.09</td>
       <td>74.09</td>
@@ -3051,6 +3343,7 @@
       <td>38.69</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>32.75</td>
       <td>29.24</td>
       <td>63.22</td>
@@ -3063,6 +3356,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>53.42</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>53.61</td>
@@ -3079,6 +3373,7 @@
       <td>69.20</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>57.59</td>
       <td>49.94</td>
       <td>67.53</td>
@@ -3091,6 +3386,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>58.40</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>53.67</td>
@@ -3107,6 +3403,7 @@
       <td>133.40</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>119.71</td>
       <td>115.44</td>
       <td>40.51</td>
@@ -3119,6 +3416,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>29.65</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>28.54</td>
@@ -3135,6 +3433,7 @@
       <td>5.40</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>4.93</td>
       <td>4.71</td>
       <td>62.43</td>
@@ -3147,6 +3446,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>75.55</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>74.38</td>
@@ -3163,6 +3463,7 @@
       <td>294.80</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>300.13</td>
       <td>291.39</td>
       <td>54.03</td>
@@ -3177,6 +3478,7 @@
       <td>74.92</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>70.21</td>
       <td>66.35</td>
       <td>30.03</td>
@@ -3191,23 +3493,10 @@
       <td>16.98</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>16.92</td>
       <td>17.48</td>
       <td>13.53</td>
-    </tr>
-    <tr>
-      <td>300502</td>
-      <td>新易盛</td>
-      <td>信息技术</td>
-      <td>成都市</td>
-      <td>沪深300</td>
-      <td>2026-01-09</td>
-      <td>398.22</td>
-      <td></td>
-      <td></td>
-      <td>422.14</td>
-      <td>377.96</td>
-      <td>54.94</td>
     </tr>
     <tr>
       <td>300529</td>
@@ -3217,6 +3506,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>20.67</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>20.17</td>
@@ -3233,6 +3523,7 @@
       <td>50.85</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>48.74</td>
       <td>51.17</td>
       <td>26.70</td>
@@ -3245,6 +3536,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>107.27</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>97.30</td>
@@ -3261,6 +3553,7 @@
       <td>15.18</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>15.24</td>
       <td>14.86</td>
       <td>53.39</td>
@@ -3273,6 +3566,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>75.42</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>72.85</td>
@@ -3289,6 +3583,7 @@
       <td>15.95</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>15.34</td>
       <td>16.09</td>
       <td>22.86</td>
@@ -3301,6 +3596,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>123.60</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>112.02</td>
@@ -3317,6 +3613,7 @@
       <td>42.68</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>38.07</td>
       <td>32.79</td>
       <td>60.48</td>
@@ -3329,6 +3626,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>36.58</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>36.15</td>
@@ -3345,6 +3643,7 @@
       <td>72.95</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>70.85</td>
       <td>69.70</td>
       <td>34.16</td>
@@ -3357,6 +3656,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>51.69</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>47.45</td>
@@ -3373,6 +3673,7 @@
       <td>42.76</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>37.84</td>
       <td>30.77</td>
       <td>66.46</td>
@@ -3385,6 +3686,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>103.35</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>97.90</td>
@@ -3401,6 +3703,7 @@
       <td>37.80</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>35.47</td>
       <td>35.68</td>
       <td>40.27</td>
@@ -3413,6 +3716,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>369.23</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>372.81</td>
@@ -3429,6 +3733,7 @@
       <td>206.15</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>190.18</td>
       <td>133.54</td>
       <td>117.15</td>
@@ -3443,6 +3748,7 @@
       <td>289.81</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>253.29</td>
       <td>220.20</td>
       <td>82.83</td>
@@ -3455,6 +3761,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>31.59</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>30.24</td>
@@ -3471,6 +3778,7 @@
       <td>203.68</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>200.07</td>
       <td>204.81</td>
       <td>26.86</td>
@@ -3483,6 +3791,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>75.89</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>74.05</td>
@@ -3499,6 +3808,7 @@
       <td>82.99</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>79.25</td>
       <td>73.76</td>
       <td>48.46</td>
@@ -3511,6 +3821,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>139.06</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>137.18</td>
@@ -3527,6 +3838,7 @@
       <td>62.82</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>59.60</td>
       <td>60.66</td>
       <td>27.75</td>
@@ -3541,6 +3853,7 @@
       <td>106.20</td>
       <td></td>
       <td>Y</td>
+      <td></td>
       <td>110.59</td>
       <td>112.21</td>
       <td>34.67</td>
@@ -3553,6 +3866,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>149.91</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>144.98</td>
@@ -3569,6 +3883,7 @@
       <td>54.08</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>49.75</td>
       <td>44.61</td>
       <td>64.92</td>
@@ -3581,6 +3896,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>209.21</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>203.52</td>
@@ -3597,6 +3913,7 @@
       <td>50.50</td>
       <td>Y</td>
       <td>Y</td>
+      <td></td>
       <td>51.51</td>
       <td>56.49</td>
       <td>28.94</td>
@@ -3609,6 +3926,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>29.54</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>29.25</td>
@@ -3625,6 +3943,7 @@
       <td>49.90</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>48.08</td>
       <td>49.00</td>
       <td>25.61</td>
@@ -3637,6 +3956,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>113.70</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>110.11</td>
@@ -3653,6 +3973,7 @@
       <td>63.59</td>
       <td></td>
       <td>Y</td>
+      <td></td>
       <td>65.34</td>
       <td>68.35</td>
       <td>54.17</td>
@@ -3667,23 +3988,10 @@
       <td>86.05</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>80.67</td>
       <td>81.19</td>
       <td>36.31</td>
-    </tr>
-    <tr>
-      <td>600000</td>
-      <td>浦发银行</td>
-      <td>金融</td>
-      <td>上海市</td>
-      <td>沪深300</td>
-      <td>2026-01-09</td>
-      <td>11.54</td>
-      <td></td>
-      <td></td>
-      <td>11.77</td>
-      <td>11.84</td>
-      <td>29.73</td>
     </tr>
     <tr>
       <td>600004</td>
@@ -3693,6 +4001,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>9.46</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>9.51</td>
@@ -3709,6 +4018,7 @@
       <td>19.95</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>19.60</td>
       <td>20.03</td>
       <td>16.76</td>
@@ -3721,6 +4031,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>3.02</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>2.99</td>
@@ -3737,6 +4048,7 @@
       <td>32.69</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>32.79</td>
       <td>32.32</td>
       <td>30.47</td>
@@ -3749,6 +4061,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>2.60</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>2.49</td>
@@ -3765,6 +4078,7 @@
       <td>7.38</td>
       <td>Y</td>
       <td>Y</td>
+      <td></td>
       <td>7.54</td>
       <td>7.83</td>
       <td>25.81</td>
@@ -3779,23 +4093,10 @@
       <td>6.77</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>6.83</td>
       <td>6.90</td>
       <td>9.88</td>
-    </tr>
-    <tr>
-      <td>600016</td>
-      <td>民生银行</td>
-      <td>金融</td>
-      <td>北京市</td>
-      <td>沪深300</td>
-      <td>2026-01-09</td>
-      <td>3.82</td>
-      <td></td>
-      <td></td>
-      <td>3.85</td>
-      <td>3.99</td>
-      <td>9.08</td>
     </tr>
     <tr>
       <td>600018</td>
@@ -3805,6 +4106,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>5.47</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>5.48</td>
@@ -3821,6 +4123,7 @@
       <td>7.28</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>7.29</td>
       <td>7.31</td>
       <td>18.70</td>
@@ -3833,6 +4136,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>5.02</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>5.03</td>
@@ -3849,6 +4153,7 @@
       <td>9.15</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>9.16</td>
       <td>9.56</td>
       <td>7.83</td>
@@ -3861,6 +4166,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>12.71</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>12.05</td>
@@ -3877,23 +4183,10 @@
       <td>5.03</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>5.07</td>
       <td>5.22</td>
       <td>17.96</td>
-    </tr>
-    <tr>
-      <td>600028</td>
-      <td>中国石化</td>
-      <td>化石能源</td>
-      <td>北京市</td>
-      <td>沪深300</td>
-      <td>2026-01-09</td>
-      <td>6.16</td>
-      <td></td>
-      <td></td>
-      <td>6.06</td>
-      <td>5.79</td>
-      <td>21.22</td>
     </tr>
     <tr>
       <td>600029</td>
@@ -3903,6 +4196,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>7.97</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>7.86</td>
@@ -3919,6 +4213,7 @@
       <td>28.57</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>28.94</td>
       <td>28.72</td>
       <td>22.30</td>
@@ -3931,6 +4226,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>22.28</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>21.46</td>
@@ -3947,6 +4243,7 @@
       <td>41.30</td>
       <td>Y</td>
       <td></td>
+      <td></td>
       <td>41.93</td>
       <td>42.32</td>
       <td>12.75</td>
@@ -3959,6 +4256,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>38.16</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>36.73</td>
@@ -3975,6 +4273,7 @@
       <td>10.46</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>10.05</td>
       <td>9.53</td>
       <td>30.47</td>
@@ -3987,6 +4286,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>6.57</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>6.40</td>
@@ -4003,6 +4303,7 @@
       <td>5.42</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>5.21</td>
       <td>5.34</td>
       <td>17.16</td>
@@ -4015,6 +4316,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>7.81</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>7.72</td>
@@ -4031,6 +4333,7 @@
       <td>32.47</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>32.82</td>
       <td>31.92</td>
       <td>23.06</td>
@@ -4043,6 +4346,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>18.20</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>18.42</td>
@@ -4059,6 +4363,7 @@
       <td>32.44</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>32.30</td>
       <td>33.40</td>
       <td>14.56</td>
@@ -4073,6 +4378,7 @@
       <td>24.94</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>23.55</td>
       <td>22.27</td>
       <td>44.36</td>
@@ -4085,6 +4391,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>34.60</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>33.66</td>
@@ -4101,6 +4408,7 @@
       <td>15.40</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>15.39</td>
       <td>15.69</td>
       <td>14.61</td>
@@ -4113,6 +4421,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>49.41</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>47.83</td>
@@ -4129,6 +4438,7 @@
       <td>5.98</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>5.91</td>
       <td>5.25</td>
       <td>34.46</td>
@@ -4141,6 +4451,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>106.05</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>91.00</td>
@@ -4157,6 +4468,7 @@
       <td>37.46</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>35.84</td>
       <td>31.85</td>
       <td>39.18</td>
@@ -4169,6 +4481,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>20.92</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>19.23</td>
@@ -4185,6 +4498,7 @@
       <td>35.77</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>34.57</td>
       <td>34.65</td>
       <td>27.16</td>
@@ -4197,6 +4511,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>9.43</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>9.42</td>
@@ -4213,6 +4528,7 @@
       <td>1.67</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>1.64</td>
       <td>1.63</td>
       <td>26.44</td>
@@ -4225,6 +4541,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>37.81</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>37.86</td>
@@ -4241,6 +4558,7 @@
       <td>17.05</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>16.74</td>
       <td>17.61</td>
       <td>19.96</td>
@@ -4253,6 +4571,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>2.91</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>2.89</td>
@@ -4269,6 +4588,7 @@
       <td>2.72</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>2.70</td>
       <td>2.79</td>
       <td>17.39</td>
@@ -4281,6 +4601,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>17.71</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>17.07</td>
@@ -4297,6 +4618,7 @@
       <td>7.53</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>7.52</td>
       <td>7.54</td>
       <td>10.96</td>
@@ -4309,6 +4631,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>70.62</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>70.37</td>
@@ -4325,6 +4648,7 @@
       <td>14.25</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>13.76</td>
       <td>14.22</td>
       <td>23.37</td>
@@ -4337,6 +4661,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>27.65</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>27.27</td>
@@ -4353,6 +4678,7 @@
       <td>4.11</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>3.99</td>
       <td>4.14</td>
       <td>22.20</td>
@@ -4365,6 +4691,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>5.85</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>5.49</td>
@@ -4381,6 +4708,7 @@
       <td>16.55</td>
       <td>Y</td>
       <td></td>
+      <td></td>
       <td>16.60</td>
       <td>16.88</td>
       <td>19.69</td>
@@ -4393,6 +4721,7 @@
       <td>上证50/深证50</td>
       <td>2026-01-09</td>
       <td>8.12</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>7.70</td>
@@ -4409,6 +4738,7 @@
       <td>5.01</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>4.99</td>
       <td>5.15</td>
       <td>10.78</td>
@@ -4421,6 +4751,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>17.02</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>16.68</td>
@@ -4437,6 +4768,7 @@
       <td>63.78</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>62.57</td>
       <td>62.41</td>
       <td>30.24</td>
@@ -4449,6 +4781,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>79.35</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>78.19</td>
@@ -4465,6 +4798,7 @@
       <td>18.99</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>18.26</td>
       <td>17.59</td>
       <td>32.48</td>
@@ -4477,6 +4811,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>38.96</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>35.27</td>
@@ -4493,6 +4828,7 @@
       <td>28.13</td>
       <td>Y</td>
       <td></td>
+      <td></td>
       <td>28.64</td>
       <td>29.13</td>
       <td>17.91</td>
@@ -4505,6 +4841,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>4.43</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>4.36</td>
@@ -4521,6 +4858,7 @@
       <td>25.32</td>
       <td>Y</td>
       <td></td>
+      <td></td>
       <td>25.56</td>
       <td>26.02</td>
       <td>13.00</td>
@@ -4533,6 +4871,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>23.22</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>22.33</td>
@@ -4549,6 +4888,7 @@
       <td>9.51</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>9.50</td>
       <td>9.37</td>
       <td>23.69</td>
@@ -4561,6 +4901,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>11.28</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>11.03</td>
@@ -4577,6 +4918,7 @@
       <td>56.50</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>52.08</td>
       <td>41.69</td>
       <td>53.18</td>
@@ -4589,6 +4931,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>15.51</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>14.07</td>
@@ -4605,6 +4948,7 @@
       <td>11.71</td>
       <td>Y</td>
       <td>Y</td>
+      <td></td>
       <td>11.93</td>
       <td>12.90</td>
       <td>14.22</td>
@@ -4617,6 +4961,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>23.40</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>22.25</td>
@@ -4633,6 +4978,7 @@
       <td>6.15</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>6.13</td>
       <td>6.23</td>
       <td>13.72</td>
@@ -4645,6 +4991,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>23.68</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>23.23</td>
@@ -4661,6 +5008,7 @@
       <td>16.48</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>16.28</td>
       <td>16.86</td>
       <td>27.37</td>
@@ -4673,6 +5021,7 @@
       <td>上证50/深证50</td>
       <td>2026-01-09</td>
       <td>50.53</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>49.94</td>
@@ -4689,6 +5038,7 @@
       <td>33.26</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>31.94</td>
       <td>28.07</td>
       <td>31.14</td>
@@ -4701,6 +5051,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>172.01</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>170.79</td>
@@ -4717,6 +5068,7 @@
       <td>20.83</td>
       <td></td>
       <td>Y</td>
+      <td></td>
       <td>21.30</td>
       <td>22.96</td>
       <td>34.29</td>
@@ -4729,6 +5081,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>29.58</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>28.93</td>
@@ -4745,6 +5098,7 @@
       <td>23.53</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>22.12</td>
       <td>20.92</td>
       <td>37.67</td>
@@ -4757,6 +5111,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>70.50</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>69.90</td>
@@ -4773,6 +5128,7 @@
       <td>24.59</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>24.46</td>
       <td>21.77</td>
       <td>58.42</td>
@@ -4785,6 +5141,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>24.93</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>24.01</td>
@@ -4801,6 +5158,7 @@
       <td>8.51</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>7.63</td>
       <td>6.79</td>
       <td>37.28</td>
@@ -4815,6 +5173,7 @@
       <td>38.93</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>33.77</td>
       <td>26.07</td>
       <td>64.66</td>
@@ -4827,6 +5186,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>14.15</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>13.98</td>
@@ -4843,6 +5203,7 @@
       <td>29.13</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>29.00</td>
       <td>29.30</td>
       <td>8.69</td>
@@ -4855,6 +5216,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>4.91</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>5.05</td>
@@ -4871,6 +5233,7 @@
       <td>6.04</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>5.86</td>
       <td>5.98</td>
       <td>27.81</td>
@@ -4883,6 +5246,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>1419.10</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>1411.47</td>
@@ -4899,6 +5263,7 @@
       <td>18.60</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>17.80</td>
       <td>18.07</td>
       <td>27.76</td>
@@ -4911,6 +5276,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>18.48</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>18.26</td>
@@ -4927,6 +5293,7 @@
       <td>20.38</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>20.24</td>
       <td>20.61</td>
       <td>14.99</td>
@@ -4939,6 +5306,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>15.31</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>15.25</td>
@@ -4955,6 +5323,7 @@
       <td>43.76</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>40.36</td>
       <td>37.00</td>
       <td>46.10</td>
@@ -4969,6 +5338,7 @@
       <td>48.19</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>43.13</td>
       <td>36.39</td>
       <td>52.74</td>
@@ -4981,6 +5351,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>108.05</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>106.26</td>
@@ -4997,6 +5368,7 @@
       <td>31.26</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>30.56</td>
       <td>30.08</td>
       <td>23.11</td>
@@ -5009,6 +5381,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>48.22</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>46.74</td>
@@ -5025,6 +5398,7 @@
       <td>41.18</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>38.38</td>
       <td>37.92</td>
       <td>31.69</td>
@@ -5037,6 +5411,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>22.76</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>22.45</td>
@@ -5053,6 +5428,7 @@
       <td>14.56</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>13.56</td>
       <td>14.00</td>
       <td>32.62</td>
@@ -5065,6 +5441,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>62.18</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>61.90</td>
@@ -5081,6 +5458,7 @@
       <td>13.32</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>10.85</td>
       <td>9.78</td>
       <td>66.03</td>
@@ -5093,6 +5471,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>5.24</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>5.22</td>
@@ -5109,6 +5488,7 @@
       <td>63.53</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>63.68</td>
       <td>64.78</td>
       <td>14.74</td>
@@ -5121,6 +5501,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>8.42</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>8.28</td>
@@ -5137,6 +5518,7 @@
       <td>29.52</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>25.28</td>
       <td>21.92</td>
       <td>60.44</td>
@@ -5149,6 +5531,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>14.05</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>14.09</td>
@@ -5165,6 +5548,7 @@
       <td>26.05</td>
       <td>Y</td>
       <td></td>
+      <td></td>
       <td>26.43</td>
       <td>26.61</td>
       <td>13.55</td>
@@ -5177,6 +5561,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>31.52</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>30.88</td>
@@ -5193,6 +5578,7 @@
       <td>5.74</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>5.66</td>
       <td>5.65</td>
       <td>14.47</td>
@@ -5205,6 +5591,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>20.35</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>20.28</td>
@@ -5221,6 +5608,7 @@
       <td>39.11</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>38.38</td>
       <td>40.59</td>
       <td>28.32</td>
@@ -5233,6 +5621,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>25.67</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>25.18</td>
@@ -5249,6 +5638,7 @@
       <td>62.40</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>58.69</td>
       <td>59.00</td>
       <td>35.21</td>
@@ -5261,6 +5651,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>41.67</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>41.07</td>
@@ -5277,6 +5668,7 @@
       <td>20.10</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>19.00</td>
       <td>16.86</td>
       <td>40.19</td>
@@ -5291,6 +5683,7 @@
       <td>4.94</td>
       <td>Y</td>
       <td>Y</td>
+      <td></td>
       <td>5.22</td>
       <td>5.45</td>
       <td>33.86</td>
@@ -5305,6 +5698,7 @@
       <td>19.91</td>
       <td>Y</td>
       <td>Y</td>
+      <td></td>
       <td>20.55</td>
       <td>20.51</td>
       <td>23.62</td>
@@ -5317,6 +5711,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>176.55</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>176.81</td>
@@ -5333,6 +5728,7 @@
       <td>2.88</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>2.87</td>
       <td>2.93</td>
       <td>17.94</td>
@@ -5345,6 +5741,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>6.53</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>6.50</td>
@@ -5361,6 +5758,7 @@
       <td>9.44</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>9.26</td>
       <td>9.60</td>
       <td>26.07</td>
@@ -5373,6 +5771,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>23.73</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>21.45</td>
@@ -5389,6 +5788,7 @@
       <td>15.60</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>15.26</td>
       <td>14.71</td>
       <td>44.65</td>
@@ -5403,6 +5803,7 @@
       <td>27.07</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>24.51</td>
       <td>22.36</td>
       <td>41.30</td>
@@ -5415,6 +5816,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>6.96</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>6.84</td>
@@ -5431,6 +5833,7 @@
       <td>8.51</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>8.42</td>
       <td>8.74</td>
       <td>19.28</td>
@@ -5443,6 +5846,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>26.08</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>24.85</td>
@@ -5459,6 +5863,7 @@
       <td>28.69</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>22.49</td>
       <td>14.01</td>
       <td>84.34</td>
@@ -5471,6 +5876,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>31.62</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>30.96</td>
@@ -5487,6 +5893,7 @@
       <td>13.30</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>13.32</td>
       <td>13.87</td>
       <td>9.86</td>
@@ -5501,6 +5908,7 @@
       <td>27.68</td>
       <td>Y</td>
       <td></td>
+      <td></td>
       <td>28.28</td>
       <td>28.06</td>
       <td>19.07</td>
@@ -5513,6 +5921,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>43.97</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>41.36</td>
@@ -5529,6 +5938,7 @@
       <td>47.54</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>44.36</td>
       <td>41.59</td>
       <td>46.70</td>
@@ -5541,6 +5951,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>27.29</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>27.41</td>
@@ -5557,6 +5968,7 @@
       <td>4.15</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>4.13</td>
       <td>4.21</td>
       <td>5.65</td>
@@ -5569,6 +5981,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>6.69</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>6.67</td>
@@ -5585,6 +5998,7 @@
       <td>10.40</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>10.47</td>
       <td>10.70</td>
       <td>14.86</td>
@@ -5597,6 +6011,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>15.44</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>15.52</td>
@@ -5613,6 +6028,7 @@
       <td>28.74</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>28.77</td>
       <td>28.23</td>
       <td>30.70</td>
@@ -5627,6 +6043,7 @@
       <td>100.12</td>
       <td>Y</td>
       <td></td>
+      <td></td>
       <td>100.83</td>
       <td>105.23</td>
       <td>8.49</td>
@@ -5639,6 +6056,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>10.91</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>10.99</td>
@@ -5655,6 +6073,7 @@
       <td>31.03</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>31.36</td>
       <td>30.73</td>
       <td>40.76</td>
@@ -5667,6 +6086,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>19.83</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>19.60</td>
@@ -5683,6 +6103,7 @@
       <td>5.29</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>5.22</td>
       <td>5.08</td>
       <td>20.44</td>
@@ -5695,6 +6116,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>17.22</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>17.08</td>
@@ -5711,6 +6133,7 @@
       <td>3.91</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>3.88</td>
       <td>3.94</td>
       <td>13.35</td>
@@ -5725,6 +6148,7 @@
       <td>5.13</td>
       <td>Y</td>
       <td>Y</td>
+      <td></td>
       <td>5.20</td>
       <td>5.55</td>
       <td>10.45</td>
@@ -5739,23 +6163,10 @@
       <td>10.83</td>
       <td>Y</td>
       <td>Y</td>
+      <td></td>
       <td>11.18</td>
       <td>11.32</td>
       <td>19.33</td>
-    </tr>
-    <tr>
-      <td>601012</td>
-      <td>隆基绿能</td>
-      <td>电气设备</td>
-      <td>西安市</td>
-      <td>沪深300</td>
-      <td>2026-01-09</td>
-      <td>18.39</td>
-      <td></td>
-      <td></td>
-      <td>18.47</td>
-      <td>19.36</td>
-      <td>28.15</td>
     </tr>
     <tr>
       <td>601018</td>
@@ -5765,6 +6176,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>3.68</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>3.67</td>
@@ -5781,6 +6193,7 @@
       <td>58.32</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>57.97</td>
       <td>55.51</td>
       <td>24.29</td>
@@ -5793,6 +6206,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>16.19</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>16.52</td>
@@ -5809,6 +6223,7 @@
       <td>17.83</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>17.88</td>
       <td>18.77</td>
       <td>18.38</td>
@@ -5821,6 +6236,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>26.15</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>26.54</td>
@@ -5837,6 +6253,7 @@
       <td>6.57</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>6.44</td>
       <td>6.69</td>
       <td>20.42</td>
@@ -5849,6 +6266,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>42.45</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>41.05</td>
@@ -5865,6 +6283,7 @@
       <td>115.20</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>112.16</td>
       <td>99.85</td>
       <td>39.72</td>
@@ -5877,6 +6296,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>8.98</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>9.00</td>
@@ -5893,6 +6313,7 @@
       <td>8.10</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>7.88</td>
       <td>7.69</td>
       <td>27.06</td>
@@ -5905,6 +6326,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>124.72</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>123.77</td>
@@ -5921,6 +6343,7 @@
       <td>19.27</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>19.19</td>
       <td>20.08</td>
       <td>17.29</td>
@@ -5933,6 +6356,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>61.48</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>62.71</td>
@@ -5949,6 +6373,7 @@
       <td>15.01</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>14.54</td>
       <td>14.50</td>
       <td>29.68</td>
@@ -5961,6 +6386,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>20.84</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>21.03</td>
@@ -5977,6 +6403,7 @@
       <td>28.28</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>27.56</td>
       <td>24.60</td>
       <td>36.91</td>
@@ -5989,6 +6416,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>5.51</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>5.53</td>
@@ -6005,6 +6433,7 @@
       <td>10.86</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>9.94</td>
       <td>8.77</td>
       <td>62.24</td>
@@ -6017,6 +6446,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>7.80</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>7.77</td>
@@ -6033,6 +6463,7 @@
       <td>21.07</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>21.19</td>
       <td>19.85</td>
       <td>30.99</td>
@@ -6045,6 +6476,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>5.19</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>5.05</td>
@@ -6061,6 +6493,7 @@
       <td>22.59</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>22.09</td>
       <td>22.65</td>
       <td>20.92</td>
@@ -6073,6 +6506,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>9.91</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>9.96</td>
@@ -6089,6 +6523,7 @@
       <td>17.67</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>17.21</td>
       <td>15.26</td>
       <td>39.26</td>
@@ -6101,6 +6536,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>8.45</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>8.39</td>
@@ -6117,6 +6553,7 @@
       <td>8.44</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>8.36</td>
       <td>8.16</td>
       <td>21.19</td>
@@ -6129,6 +6566,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>7.41</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>7.53</td>
@@ -6145,6 +6583,7 @@
       <td>8.37</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>8.40</td>
       <td>8.49</td>
       <td>11.52</td>
@@ -6157,6 +6596,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>69.00</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>70.21</td>
@@ -6173,6 +6613,7 @@
       <td>9.84</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>9.49</td>
       <td>8.75</td>
       <td>31.00</td>
@@ -6187,6 +6628,7 @@
       <td>7.07</td>
       <td>Y</td>
       <td></td>
+      <td></td>
       <td>7.17</td>
       <td>7.21</td>
       <td>14.86</td>
@@ -6199,6 +6641,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>80.38</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>76.58</td>
@@ -6215,6 +6658,7 @@
       <td>12.14</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>11.33</td>
       <td>11.85</td>
       <td>41.99</td>
@@ -6227,6 +6671,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>7.24</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>7.42</td>
@@ -6243,6 +6688,7 @@
       <td>5.58</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>5.49</td>
       <td>5.48</td>
       <td>10.46</td>
@@ -6256,6 +6702,7 @@
       <td>2026-01-09</td>
       <td>7.71</td>
       <td>Y</td>
+      <td></td>
       <td></td>
       <td>7.79</td>
       <td>7.87</td>
@@ -6271,6 +6718,7 @@
       <td>9.94</td>
       <td></td>
       <td>Y</td>
+      <td></td>
       <td>10.16</td>
       <td>10.59</td>
       <td>24.33</td>
@@ -6283,6 +6731,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>24.45</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>23.88</td>
@@ -6299,6 +6748,7 @@
       <td>14.05</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>12.86</td>
       <td>10.79</td>
       <td>52.74</td>
@@ -6311,6 +6761,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>46.50</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>44.66</td>
@@ -6327,6 +6778,7 @@
       <td>17.88</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>17.82</td>
       <td>17.89</td>
       <td>8.50</td>
@@ -6339,6 +6791,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>17.89</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>15.78</td>
@@ -6355,6 +6808,7 @@
       <td>3.08</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>3.04</td>
       <td>3.29</td>
       <td>18.89</td>
@@ -6367,6 +6821,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>48.81</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>47.98</td>
@@ -6383,6 +6838,7 @@
       <td>22.13</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>22.28</td>
       <td>22.43</td>
       <td>18.93</td>
@@ -6395,6 +6851,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>5.42</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>5.44</td>
@@ -6411,6 +6868,7 @@
       <td>5.18</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>5.18</td>
       <td>5.34</td>
       <td>8.38</td>
@@ -6423,6 +6881,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>5.38</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>5.30</td>
@@ -6439,6 +6898,7 @@
       <td>14.95</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>14.77</td>
       <td>14.53</td>
       <td>24.55</td>
@@ -6451,6 +6911,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>23.95</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>24.02</td>
@@ -6467,6 +6928,7 @@
       <td>75.35</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>74.01</td>
       <td>68.21</td>
       <td>37.40</td>
@@ -6479,6 +6941,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>48.98</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>38.18</td>
@@ -6495,6 +6958,7 @@
       <td>9.30</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>8.89</td>
       <td>8.90</td>
       <td>28.32</td>
@@ -6507,6 +6971,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>6.32</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>6.38</td>
@@ -6523,6 +6988,7 @@
       <td>7.03</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>6.97</td>
       <td>7.32</td>
       <td>20.71</td>
@@ -6535,6 +7001,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>17.80</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>17.77</td>
@@ -6551,6 +7018,7 @@
       <td>126.40</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>125.93</td>
       <td>125.21</td>
       <td>18.25</td>
@@ -6563,6 +7031,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>8.29</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>8.24</td>
@@ -6579,6 +7048,7 @@
       <td>14.54</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>14.15</td>
       <td>14.20</td>
       <td>16.50</td>
@@ -6591,6 +7061,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>5.11</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>5.13</td>
@@ -6607,6 +7078,7 @@
       <td>3.45</td>
       <td>Y</td>
       <td></td>
+      <td></td>
       <td>3.49</td>
       <td>3.52</td>
       <td>10.82</td>
@@ -6621,6 +7093,7 @@
       <td>9.03</td>
       <td>Y</td>
       <td></td>
+      <td></td>
       <td>9.17</td>
       <td>9.06</td>
       <td>18.05</td>
@@ -6633,6 +7106,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>16.12</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>16.27</td>
@@ -6649,6 +7123,7 @@
       <td>9.87</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>9.94</td>
       <td>9.65</td>
       <td>26.10</td>
@@ -6661,6 +7136,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>2.54</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>2.52</td>
@@ -6677,6 +7153,7 @@
       <td>2.40</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>2.37</td>
       <td>2.40</td>
       <td>10.69</td>
@@ -6689,6 +7166,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>9.83</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>9.15</td>
@@ -6705,6 +7183,7 @@
       <td>29.57</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>28.89</td>
       <td>29.07</td>
       <td>23.03</td>
@@ -6717,6 +7196,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>11.05</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>11.01</td>
@@ -6733,6 +7213,7 @@
       <td>1.63</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>1.62</td>
       <td>1.67</td>
       <td>16.11</td>
@@ -6745,6 +7226,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>16.08</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>16.06</td>
@@ -6761,6 +7243,7 @@
       <td>95.78</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>91.05</td>
       <td>81.35</td>
       <td>65.57</td>
@@ -6773,6 +7256,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>13.81</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>13.22</td>
@@ -6789,9 +7273,40 @@
       <td>37.22</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>35.08</td>
       <td>30.91</td>
       <td>41.05</td>
+    </tr>
+    <tr>
+      <td>601901</td>
+      <td>方正证券</td>
+      <td>金融</td>
+      <td>长沙市</td>
+      <td>沪深300</td>
+      <td>2026-01-09</td>
+      <td>7.92</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>7.89</td>
+      <td>7.97</td>
+      <td>15.03</td>
+    </tr>
+    <tr>
+      <td>601916</td>
+      <td>浙商银行</td>
+      <td>金融</td>
+      <td>杭州市</td>
+      <td>沪深300</td>
+      <td>2026-01-09</td>
+      <td>3.03</td>
+      <td>Y</td>
+      <td></td>
+      <td></td>
+      <td>3.04</td>
+      <td>3.07</td>
+      <td>12.91</td>
     </tr>
     <tr>
       <td>601919</td>
@@ -6801,6 +7316,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>14.90</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>15.01</td>
@@ -6817,6 +7333,7 @@
       <td>9.06</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>9.12</td>
       <td>9.21</td>
       <td>15.61</td>
@@ -6829,6 +7346,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>14.74</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>14.72</td>
@@ -6845,6 +7363,7 @@
       <td>9.04</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>8.85</td>
       <td>8.88</td>
       <td>12.69</td>
@@ -6859,6 +7378,7 @@
       <td>5.49</td>
       <td>Y</td>
       <td></td>
+      <td></td>
       <td>5.60</td>
       <td>5.66</td>
       <td>15.11</td>
@@ -6871,6 +7391,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>35.77</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>35.67</td>
@@ -6887,6 +7408,7 @@
       <td>7.39</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>7.47</td>
       <td>7.66</td>
       <td>16.42</td>
@@ -6899,6 +7421,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>93.34</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>89.66</td>
@@ -6915,6 +7438,7 @@
       <td>2.33</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>2.30</td>
       <td>2.24</td>
       <td>29.38</td>
@@ -6927,6 +7451,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>71.00</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>69.04</td>
@@ -6943,6 +7468,7 @@
       <td>267.81</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>275.77</td>
       <td>263.09</td>
       <td>23.83</td>
@@ -6955,6 +7481,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>41.55</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>41.50</td>
@@ -6971,6 +7498,7 @@
       <td>99.08</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>95.32</td>
       <td>94.68</td>
       <td>26.45</td>
@@ -6983,6 +7511,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>55.00</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>54.71</td>
@@ -6999,6 +7528,7 @@
       <td>37.89</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>37.71</td>
       <td>37.67</td>
       <td>13.99</td>
@@ -7011,6 +7541,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>96.40</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>93.98</td>
@@ -7027,6 +7558,7 @@
       <td>35.47</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>35.26</td>
       <td>37.16</td>
       <td>13.44</td>
@@ -7039,6 +7571,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>46.78</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>46.25</td>
@@ -7055,6 +7588,7 @@
       <td>83.48</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>81.54</td>
       <td>82.99</td>
       <td>31.34</td>
@@ -7067,6 +7601,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>131.52</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>128.72</td>
@@ -7083,6 +7618,7 @@
       <td>25.58</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>25.20</td>
       <td>23.16</td>
       <td>35.66</td>
@@ -7095,6 +7631,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>55.14</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>53.30</td>
@@ -7111,6 +7648,7 @@
       <td>69.32</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>68.62</td>
       <td>71.20</td>
       <td>16.43</td>
@@ -7123,6 +7661,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>60.90</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>60.29</td>
@@ -7139,6 +7678,7 @@
       <td>57.62</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>50.20</td>
       <td>43.38</td>
       <td>61.79</td>
@@ -7151,6 +7691,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>27.71</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>27.49</td>
@@ -7167,6 +7708,7 @@
       <td>75.95</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>71.19</td>
       <td>63.86</td>
       <td>47.45</td>
@@ -7179,6 +7721,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>14.08</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>14.01</td>
@@ -7195,6 +7738,7 @@
       <td>31.50</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>31.29</td>
       <td>30.70</td>
       <td>20.09</td>
@@ -7207,6 +7751,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>52.61</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>51.70</td>
@@ -7223,6 +7768,7 @@
       <td>15.06</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>14.69</td>
       <td>13.81</td>
       <td>32.71</td>
@@ -7235,6 +7781,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>187.44</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>183.98</td>
@@ -7251,6 +7798,7 @@
       <td>27.84</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>27.50</td>
       <td>27.89</td>
       <td>14.55</td>
@@ -7263,6 +7811,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>22.21</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>22.12</td>
@@ -7279,6 +7828,7 @@
       <td>77.12</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>76.39</td>
       <td>67.88</td>
       <td>48.86</td>
@@ -7291,6 +7841,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>250.05</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>239.52</td>
@@ -7307,6 +7858,7 @@
       <td>22.78</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>20.72</td>
       <td>17.42</td>
       <td>41.62</td>
@@ -7319,6 +7871,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>87.00</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>87.70</td>
@@ -7335,6 +7888,7 @@
       <td>277.30</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>273.01</td>
       <td>272.77</td>
       <td>26.48</td>
@@ -7347,6 +7901,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>29.94</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>29.00</td>
@@ -7363,6 +7918,7 @@
       <td>107.07</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>98.48</td>
       <td>84.29</td>
       <td>32.68</td>
@@ -7377,6 +7933,7 @@
       <td>34.78</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>33.41</td>
       <td>29.64</td>
       <td>50.36</td>
@@ -7389,6 +7946,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>132.38</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>127.65</td>
@@ -7405,6 +7963,7 @@
       <td>5.56</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>5.51</td>
       <td>5.38</td>
       <td>11.88</td>
@@ -7417,6 +7976,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>336.68</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>313.44</td>
@@ -7433,6 +7993,7 @@
       <td>195.70</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>184.01</td>
       <td>158.37</td>
       <td>48.77</td>
@@ -7445,6 +8006,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>68.20</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>67.65</td>
@@ -7461,6 +8023,7 @@
       <td>246.55</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>228.01</td>
       <td>222.07</td>
       <td>46.15</td>
@@ -7473,6 +8036,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>139.99</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>137.12</td>
@@ -7489,6 +8053,7 @@
       <td>61.05</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>59.50</td>
       <td>61.37</td>
       <td>25.98</td>
@@ -7501,6 +8066,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>55.66</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>52.40</td>
@@ -7517,6 +8083,7 @@
       <td>359.58</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>354.10</td>
       <td>316.42</td>
       <td>63.24</td>
@@ -7529,6 +8096,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>195.05</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>186.18</td>
@@ -7545,6 +8113,7 @@
       <td>92.04</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>90.47</td>
       <td>89.39</td>
       <td>32.30</td>
@@ -7557,6 +8126,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>341.50</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>319.87</td>
@@ -7573,6 +8143,7 @@
       <td>174.85</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>164.09</td>
       <td>145.56</td>
       <td>42.24</td>
@@ -7587,6 +8158,7 @@
       <td>92.95</td>
       <td></td>
       <td></td>
+      <td>🔥</td>
       <td>79.73</td>
       <td>72.25</td>
       <td>59.83</td>
@@ -7599,6 +8171,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>23.63</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>22.68</td>
@@ -7615,6 +8188,7 @@
       <td>54.60</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>52.24</td>
       <td>52.29</td>
       <td>43.76</td>
@@ -7627,6 +8201,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>163.49</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>157.68</td>
@@ -7643,6 +8218,7 @@
       <td>39.20</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>36.74</td>
       <td>37.11</td>
       <td>32.48</td>
@@ -7655,6 +8231,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>52.10</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>51.17</td>
@@ -7671,6 +8248,7 @@
       <td>151.56</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>142.85</td>
       <td>136.36</td>
       <td>34.33</td>
@@ -7683,6 +8261,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>97.00</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>95.87</td>
@@ -7699,6 +8278,7 @@
       <td>6.18</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>5.91</td>
       <td>5.73</td>
       <td>39.44</td>
@@ -7711,6 +8291,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>312.99</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>294.22</td>
@@ -7727,6 +8308,7 @@
       <td>36.71</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>35.42</td>
       <td>33.15</td>
       <td>49.00</td>
@@ -7739,6 +8321,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>1491.00</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>1397.34</td>
@@ -7755,6 +8338,7 @@
       <td>98.80</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>98.33</td>
       <td>101.98</td>
       <td>55.51</td>
@@ -7767,6 +8351,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>137.41</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>132.01</td>
@@ -7783,6 +8368,7 @@
       <td>26.61</td>
       <td></td>
       <td>Y</td>
+      <td></td>
       <td>27.63</td>
       <td>28.52</td>
       <td>36.35</td>
@@ -7795,6 +8381,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>72.89</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>67.73</td>
@@ -7811,6 +8398,7 @@
       <td>58.11</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>56.70</td>
       <td>52.22</td>
       <td>47.73</td>
@@ -7823,6 +8411,7 @@
       <td>沪深300</td>
       <td>2026-01-09</td>
       <td>15.54</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>15.66</td>
@@ -7839,6 +8428,7 @@
       <td>343.90</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>337.21</td>
       <td>356.47</td>
       <td>30.94</td>
@@ -7851,6 +8441,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>169.98</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>148.36</td>
@@ -7867,6 +8458,7 @@
       <td>107.55</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>105.67</td>
       <td>102.27</td>
       <td>30.72</td>
@@ -7879,6 +8471,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>18.32</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>17.47</td>
@@ -7895,6 +8488,7 @@
       <td>235.46</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>231.34</td>
       <td>231.46</td>
       <td>44.70</td>
@@ -7907,6 +8501,7 @@
       <td>中证A500</td>
       <td>2026-01-09</td>
       <td>265.66</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>254.06</td>
@@ -7923,6 +8518,7 @@
       <td>53.64</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>50.71</td>
       <td>50.69</td>
       <td>30.92</td>
@@ -7937,6 +8533,7 @@
       <td>128.88</td>
       <td></td>
       <td></td>
+      <td></td>
       <td>126.19</td>
       <td>120.54</td>
       <td>39.60</td>
@@ -7948,7 +8545,7 @@
         </div>
         
         <footer class="text-center text-muted mt-4">
-            <small>Generated by C.OP | Data Source: AkShare | AIGC Applications Engineer:Bian Songqin</small>
+            <small>Generated by C.OP | Data Source: AkShare | Strategy: Left & Right Side Combo</small>
         </footer>
 
     </div>
@@ -7961,7 +8558,7 @@
         $(document).ready(function() {
             // 初始化 DataTable
             var table = $('#stockTable').DataTable({
-                "order": [[ 6, "desc" ]], // 默认按第7列(策略1)降序排列，把'Y'排前面
+                "order": [[ 9, "desc" ], [ 8, "desc" ], [ 7, "desc" ]], // 默认优先按 策略3(第10列，索引9) 排序
                 "pageLength": 25,
                 "language": {
                     "search": "🔍 搜索股票/行业:",
@@ -7976,27 +8573,34 @@
                 },
                 // 回调函数：用于高亮显示信号行
                 "rowCallback": function( row, data, index ) {
-                    // data[7] 是策略1列, data[8] 是策略2列 (根据列顺序调整索引)
-                    // 注意：DataTables 索引从0开始。
-                    // 列顺序：代码0, 简称1, 行业2, 地区3, 类型4, 日期5, 收盘6, 策略1=7, 策略2=8
+                    // 列索引对照（已在 Python 中强制对齐）：
+                    // 0:代码, 1:简称, 2:行业, 3:地区, 4:类型, 5:日期, 6:收盘
+                    // 7:策略1(大底), 8:策略2(波段), 9:策略3(主升)
+                    // 10:BBI, 11:MA60, 12:波动率
                     
                     var s1 = data[7]; 
                     var s2 = data[8];
+                    var s3 = data[9];
                     
                     if (s1 === 'Y') {
-                        $('td:eq(7)', row).html('<span class="badge bg-danger">大底信号</span>');
-                        $(row).addClass('table-warning'); // 整行标黄
+                        $('td:eq(7)', row).html('<span class="badge bg-danger">大底</span>');
+                        $(row).addClass('table-warning');
                     }
                     
                     if (s2 === 'Y') {
-                        $('td:eq(8)', row).html('<span class="badge bg-success">波段信号</span>');
-                        $(row).addClass('table-warning'); // 整行标黄
+                        $('td:eq(8)', row).html('<span class="badge bg-success">波段</span>');
+                        $(row).addClass('table-warning');
+                    }
+
+                    if (s3 === '🔥') {
+                        $('td:eq(9)', row).html('<span class="badge bg-warning text-dark">主升浪</span>');
+                        $(row).addClass('table-warning'); // 主升浪整行高亮
                     }
                     
-                    // 波动率高亮 (第11列)
-                    var vol = parseFloat(data[11]);
+                    // 波动率高亮 (第13列, 索引12)
+                    var vol = parseFloat(data[12]);
                     if (vol > 60) {
-                        $('td:eq(11)', row).css('color', 'red').css('font-weight', 'bold');
+                        $('td:eq(12)', row).css('color', 'red').css('font-weight', 'bold');
                     }
                 }
             });
