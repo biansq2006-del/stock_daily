@@ -1,0 +1,949 @@
+Starting update at 2026年 1月 7日 星期三 22时51分46秒 CST
+自动设定分析日期为: 2026-01-07
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-07 至 2026-01-07 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main 0699d7e] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 4 insertions(+), 88 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   ea8e08f..0699d7e  main -> main
+Finished update at 2026年 1月 7日 星期三 23时01分26秒 CST
+-----------------------------------
+Starting update at 2026年 1月 7日 星期三 23时03分44秒 CST
+自动设定分析日期为: 2026-01-07
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-07 至 2026-01-07 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main 171a130] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 86 insertions(+), 170 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   0699d7e..171a130  main -> main
+Finished update at 2026年 1月 7日 星期三 23时16分37秒 CST
+-----------------------------------
+Starting update at 2026年 1月 8日 星期四 15时08分32秒 CST
+自动设定分析日期为: 2026-01-08
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-08 至 2026-01-08 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main fe8d6ef] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2831 insertions(+), 2663 deletions(-)
+fatal: unable to access 'https://github.com/biansq2006-del/stock_daily.git/': Recv failure: Connection reset by peer
+Finished update at 2026年 1月 8日 星期四 15时12分50秒 CST
+-----------------------------------
+Starting update at 2026年 1月 9日 星期五 15时47分32秒 CST
+自动设定分析日期为: 2026-01-09
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-09 至 2026-01-09 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main 8b9fa9b] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2667 insertions(+), 2765 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   fe8d6ef..8b9fa9b  main -> main
+Finished update at 2026年 1月 9日 星期五 15时55分01秒 CST
+-----------------------------------
+Starting update at 2026年 1月10日 星期六 22时06分30秒 CST
+自动设定分析日期为: 2026-01-09
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-09 至 2026-01-09 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main 4b2a05b] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 729 insertions(+), 125 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   8b9fa9b..4b2a05b  main -> main
+Finished update at 2026年 1月10日 星期六 22时14分50秒 CST
+-----------------------------------
+Starting update at 2026年 1月11日 星期日 08时09分38秒 CST
+  File "/Users/songqin.bian/Desktop/stock/stock_html.py", line 447
+    today_str = ‘2026-01-09’
+                ^
+SyntaxError: invalid character '‘' (U+2018)
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	auto_run.sh
+	stock2026.py
+	stock_html.py
+	stock_list.xlsx
+	update_log.txt
+	"\345\244\207\344\273\275/"
+	"\347\273\274\345\220\210\347\273\223\346\236\234_2026-1-6.xlsx"
+
+nothing added to commit but untracked files present (use "git add" to track)
+Everything up-to-date
+Finished update at 2026年 1月11日 星期日 08时09分40秒 CST
+-----------------------------------
+Starting update at 2026年 1月11日 星期日 08时12分07秒 CST
+自动设定分析日期为: 2026-01-09
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-09 至 2026-01-09 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main 19cdb5e] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 95 insertions(+), 5 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   4b2a05b..19cdb5e  main -> main
+Finished update at 2026年 1月11日 星期日 08时14分18秒 CST
+-----------------------------------
+Starting update at 2026年 1月11日 星期日 08时47分03秒 CST
+自动设定分析日期为: 2026-01-09
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-09 至 2026-01-09 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main 1d1facd] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   19cdb5e..1d1facd  main -> main
+Finished update at 2026年 1月11日 星期日 08时47分49秒 CST
+-----------------------------------
+Starting update at 2026年 1月12日 星期一 15时24分46秒 CST
+自动设定分析日期为: 2026-01-09
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-09 至 2026-01-09 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main c5f38c7] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 11 insertions(+), 116 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   1d1facd..c5f38c7  main -> main
+Finished update at 2026年 1月12日 星期一 15时30分55秒 CST
+-----------------------------------
+Starting update at 2026年 1月12日 星期一 15时36分31秒 CST
+自动设定分析日期为: 2026-01-12
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-12 至 2026-01-12 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main c1e02c5] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2807 insertions(+), 2762 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   c5f38c7..c1e02c5  main -> main
+Finished update at 2026年 1月12日 星期一 15时38分13秒 CST
+-----------------------------------
+Starting update at 2026年 1月13日 星期二 15时04分12秒 CST
+自动设定分析日期为: 2026-01-13
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-13 至 2026-01-13 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main ae4c5c1] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2789 insertions(+), 2759 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   c1e02c5..ae4c5c1  main -> main
+Finished update at 2026年 1月13日 星期二 15时05分05秒 CST
+-----------------------------------
+Starting update at 2026年 1月14日 星期三 15时43分37秒 CST
+自动设定分析日期为: 2026-01-14
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-14 至 2026-01-14 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main 35ce4a0] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2746 insertions(+), 2761 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   ae4c5c1..35ce4a0  main -> main
+Finished update at 2026年 1月14日 星期三 15时44分28秒 CST
+-----------------------------------
+Starting update at 2026年 1月15日 星期四 15时11分26秒 CST
+自动设定分析日期为: 2026-01-15
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-15 至 2026-01-15 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main f05e78d] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2780 insertions(+), 2780 deletions(-)
+fatal: unable to access 'https://github.com/biansq2006-del/stock_daily.git/': Error in the HTTP2 framing layer
+Finished update at 2026年 1月15日 星期四 15时13分53秒 CST
+-----------------------------------
+Starting update at 2026年 1月15日 星期四 15时18分45秒 CST
+自动设定分析日期为: 2026-01-15
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-15 至 2026-01-15 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main a87abcb] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+fatal: unable to access 'https://github.com/biansq2006-del/stock_daily.git/': Error in the HTTP2 framing layer
+Finished update at 2026年 1月15日 星期四 15时20分45秒 CST
+-----------------------------------
+Starting update at 2026年 1月16日 星期五 14时35分00秒 CST
+自动设定分析日期为: 2026-01-16
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-16 至 2026-01-16 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main 041409e] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2771 insertions(+), 2786 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   a87abcb..041409e  main -> main
+Finished update at 2026年 1月16日 星期五 14时35分54秒 CST
+-----------------------------------
+Starting update at 2026年 1月16日 星期五 17时14分54秒 CST
+自动设定分析日期为: 2026-01-16
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-16 至 2026-01-16 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main 6761583] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1442 insertions(+), 1442 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   041409e..6761583  main -> main
+Finished update at 2026年 1月16日 星期五 17时15分31秒 CST
+-----------------------------------
+Starting update at 2026年 1月19日 星期一 14时39分23秒 CST
+自动设定分析日期为: 2026-01-19
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-19 至 2026-01-19 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main f0a9e5e] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2784 insertions(+), 2769 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   6761583..f0a9e5e  main -> main
+Finished update at 2026年 1月19日 星期一 14时40分10秒 CST
+-----------------------------------
+Starting update at 2026年 1月19日 星期一 15时01分17秒 CST
+自动设定分析日期为: 2026-01-19
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-19 至 2026-01-19 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main f6e4d72] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1357 insertions(+), 1357 deletions(-)
+fatal: unable to access 'https://github.com/biansq2006-del/stock_daily.git/': Empty reply from server
+Finished update at 2026年 1月19日 星期一 15时03分15秒 CST
+-----------------------------------
+Starting update at 2026年 1月20日 星期二 14时51分47秒 CST
+自动设定分析日期为: 2026-01-20
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-20 至 2026-01-20 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main 6f70a5b] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2777 insertions(+), 2867 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   f6e4d72..6f70a5b  main -> main
+Finished update at 2026年 1月20日 星期二 15时00分04秒 CST
+-----------------------------------
+Starting update at 2026年 1月21日 星期三 14时44分15秒 CST
+自动设定分析日期为: 2026-01-21
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-21 至 2026-01-21 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main f965d33] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2868 insertions(+), 2763 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   6f70a5b..f965d33  main -> main
+Finished update at 2026年 1月21日 星期三 14时45分05秒 CST
+-----------------------------------
+Starting update at 2026年 1月22日 星期四 14时41分28秒 CST
+自动设定分析日期为: 2026-01-22
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-22 至 2026-01-22 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main 5cfe869] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2801 insertions(+), 2801 deletions(-)
+error: RPC failed; curl 28 Failed to connect to github.com port 443 after 75013 ms: Couldn't connect to server
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+Finished update at 2026年 1月22日 星期四 14时44分49秒 CST
+-----------------------------------
+Starting update at 2026年 1月22日 星期四 15时04分20秒 CST
+Starting update at 2026年 1月23日 星期五 14时45分40秒 CST
+自动设定分析日期为: 2026-01-23
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-23 至 2026-01-23 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main 9bf58b0] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2828 insertions(+), 2813 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   5cfe869..9bf58b0  main -> main
+Finished update at 2026年 1月23日 星期五 14时46分35秒 CST
+-----------------------------------
+Starting update at 2026年 1月26日 星期一 14时47分03秒 CST
+自动设定分析日期为: 2026-01-26
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-26 至 2026-01-26 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+未生成任何有效结果。
+[main 4a40b7b] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2955 insertions(+), 2940 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   9bf58b0..4a40b7b  main -> main
+Finished update at 2026年 1月26日 星期一 14时47分29秒 CST
+-----------------------------------
+Starting update at 2026年 1月27日 星期二 14时37分47秒 CST
+自动设定分析日期为: 2026-01-27
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-27 至 2026-01-27 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main 4072c6b] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2912 insertions(+), 2912 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   4a40b7b..4072c6b  main -> main
+Finished update at 2026年 1月27日 星期二 14时38分44秒 CST
+-----------------------------------
+Starting update at 2026年 1月28日 星期三 14时43分05秒 CST
+自动设定分析日期为: 2026-01-28
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-28 至 2026-01-28 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main ed7d931] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 71 insertions(+), 8456 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   4072c6b..ed7d931  main -> main
+Finished update at 2026年 1月28日 星期三 14时43分51秒 CST
+-----------------------------------
+Starting update at 2026年 1月28日 星期三 14时57分17秒 CST
+自动设定分析日期为: 2026-01-28
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-28 至 2026-01-28 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main f236111] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 23 insertions(+), 98 deletions(-)
+fatal: unable to access 'https://github.com/biansq2006-del/stock_daily.git/': Empty reply from server
+Finished update at 2026年 1月28日 星期三 14时59分13秒 CST
+-----------------------------------
+Starting update at 2026年 1月28日 星期三 15时05分37秒 CST
+自动设定分析日期为: 2026-01-28
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-28 至 2026-01-28 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+未生成任何有效结果。
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	auto_run.sh
+	stock2026.py
+	stock_html.py
+	stock_list.xlsx
+	update_log.txt
+	"\345\244\207\344\273\275/"
+	"\347\273\274\345\220\210\347\273\223\346\236\234_2026-1-6.xlsx"
+	"\347\273\274\345\220\210\351\200\211\350\202\241\347\273\223\346\236\234.xlsx"
+
+nothing added to commit but untracked files present (use "git add" to track)
+To https://github.com/biansq2006-del/stock_daily.git
+   ed7d931..f236111  main -> main
+Finished update at 2026年 1月28日 星期三 15时06分02秒 CST
+-----------------------------------
+Starting update at 2026年 1月28日 星期三 15时07分42秒 CST
+自动设定分析日期为: 2026-01-28
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-28 至 2026-01-28 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+未生成任何有效结果。
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	auto_run.sh
+	stock2026.py
+	stock_html.py
+	stock_list.xlsx
+	update_log.txt
+	"\345\244\207\344\273\275/"
+	"\347\273\274\345\220\210\347\273\223\346\236\234_2026-1-6.xlsx"
+	"\347\273\274\345\220\210\351\200\211\350\202\241\347\273\223\346\236\234.xlsx"
+
+nothing added to commit but untracked files present (use "git add" to track)
+Everything up-to-date
+Finished update at 2026年 1月28日 星期三 15时08分06秒 CST
+-----------------------------------
+Starting update at 2026年 1月28日 星期三 16时51分23秒 CST
+自动设定分析日期为: 2026-01-28
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-28 至 2026-01-28 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main e66934c] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 65 insertions(+), 20 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   f236111..e66934c  main -> main
+Finished update at 2026年 1月28日 星期三 17时04分47秒 CST
+-----------------------------------
+Starting update at 2026年 1月29日 星期四 14时44分33秒 CST
+Starting update at 2026年 1月29日 星期四 15时38分28秒 CST
+自动设定分析日期为: 2026-01-29
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-29 至 2026-01-29 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main 8b59a3b] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 26 insertions(+), 86 deletions(-)
+To https://github.com/biansq2006-del/stock_daily.git
+   e66934c..8b59a3b  main -> main
+Finished update at 2026年 1月29日 星期四 15时39分00秒 CST
+-----------------------------------
+Starting update at 2026年 1月29日 星期四 15时39分42秒 CST
+自动设定分析日期为: 2026-01-29
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-29 至 2026-01-29 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+未生成任何有效结果。
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	auto_run.sh
+	stock2026.py
+	stock_html.py
+	stock_list.xlsx
+	update_log.txt
+	"\345\244\207\344\273\275/"
+	"\347\273\274\345\220\210\347\273\223\346\236\234_2026-1-6.xlsx"
+	"\347\273\274\345\220\210\351\200\211\350\202\241\347\273\223\346\236\234.xlsx"
+
+nothing added to commit but untracked files present (use "git add" to track)
+Everything up-to-date
+Finished update at 2026年 1月29日 星期四 15时42分11秒 CST
+-----------------------------------
+Starting update at 2026年 1月29日 星期四 15时44分49秒 CST
+自动设定分析日期为: 2026-01-29
+正在读取 stock_list.xlsx ...
+成功加载 570 只有效股票信息。
+开始计算，时间范围: 2026-01-29 至 2026-01-29 ...
+进度: 10/570进度: 20/570进度: 30/570进度: 40/570进度: 50/570进度: 60/570进度: 70/570进度: 80/570进度: 90/570进度: 100/570进度: 110/570进度: 120/570进度: 130/570进度: 140/570进度: 150/570进度: 160/570进度: 170/570进度: 180/570进度: 190/570进度: 200/570进度: 210/570进度: 220/570进度: 230/570进度: 240/570进度: 250/570进度: 260/570进度: 270/570进度: 280/570进度: 290/570进度: 300/570进度: 310/570进度: 320/570进度: 330/570进度: 340/570进度: 350/570进度: 360/570进度: 370/570进度: 380/570进度: 390/570进度: 400/570进度: 410/570进度: 420/570进度: 430/570进度: 440/570进度: 450/570进度: 460/570进度: 470/570进度: 480/570进度: 490/570进度: 500/570进度: 510/570进度: 520/570进度: 530/570进度: 540/570进度: 550/570进度: 560/570进度: 570/570
+正在生成 HTML 交互式报告...
+
+========================================
+成功！请在浏览器打开: index.html
+包含交互式表格和策略说明，可直接部署到 Gitee Pages。
+========================================
+[main f598b3f] daily auto update
+ Committer: Songqin.bian <songqin.bian@MLsongqin.bian>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 22 insertions(+), 22 deletions(-)
+fatal: unable to access 'https://github.com/biansq2006-del/stock_daily.git/': Failed to connect to github.com port 443 after 75057 ms: Couldn't connect to server
+Finished update at 2026年 1月29日 星期四 15时47分20秒 CST
+-----------------------------------
