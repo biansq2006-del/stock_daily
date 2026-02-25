@@ -479,7 +479,7 @@ if __name__ == '__main__':
     # ================= 配置区 =================
     input_file = 'stock_list.xlsx'
     output_html = 'index.html'    # Gitee Pages 默认入口通常是 index.html
-    today_str = datetime.date.today().strftime('%Y-%m-%d')
+    today_str = today_str = datetime.date.today().strftime('%Y-%m-%d')
     start_date = today_str     # 你的日期
     end_date = today_str
     print(f"自动设定分析日期为: {today_str}")
