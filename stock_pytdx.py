@@ -33,7 +33,8 @@ def calculate_xma(series, window):
     # 【修复】完全对齐通达信的 XMA 算法 (向历史平移)
     shift_num = int((window - 1) / 2)
     xma = series.rolling(window=window, min_periods=1).mean().shift(-shift_num)
-    return xma
+    ma_fallback = series.rolling(window=window, min_periods=1).mean()
+    return xma.fillna(ma_fallback)
 
 # ==========================================
 # 2. 通达信动态前复权 (QFQ) 算法核心
