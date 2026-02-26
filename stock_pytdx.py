@@ -33,7 +33,7 @@ def calculate_xma(series, window):
     # 【修复】完全对齐通达信的 XMA 算法 (向历史平移)
     shift_num = int((window - 1) / 2)
     xma = series.rolling(window=window, min_periods=1).mean().shift(-shift_num)
-    return xma.ffill()
+    return xma
 
 # ==========================================
 # 2. 通达信动态前复权 (QFQ) 算法核心
@@ -141,7 +141,10 @@ def process_stock(stock_info, start_date, end_date, client):
         # 【修改后：引入通达信的 CROSS 逻辑】
         df['VAR1'] = (df['收盘'] + df['最高'] + df['开盘'] + df['最低']) / 4
         df['S2_BuyLine'] = calculate_xma(df['VAR1'], 32) * (1 - 4/100)
-        df['策略2_波段信号'] = np.where(df['收盘'] < df['S2_BuyLine'], 'Y', '')
+        df['策略2_波段信号'] = np.where(
+            (df['S2_BuyLine'].notna()) & (df['最低'] <= df['S2_BuyLine']), 
+            'Y', ''
+        )
 
 
         # --- 策略3：主升浪 ---
