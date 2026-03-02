@@ -194,6 +194,7 @@ def process_stock(stock_info, start_date, end_date, client):
             '策略1': row['策略1_大底信号'], 
             '策略2': row['策略2_波段信号'],
             '策略3': row['策略3_主升浪'], 
+            'MA20斜率': round(row['MA20_Angle'], 2),
             'BBI': round(row['BBI'], 2),
             'MA60': round(row['MA60'], 2),
             '波动率': round(row['波动率%'], 2)
@@ -213,7 +214,7 @@ def process_stock(stock_info, start_date, end_date, client):
 def generate_html_report(df, filename, date_str):
     target_columns = [
         '股票代码', '股票简称', '主营行业', '地区', '类型', '日期', '收盘价',
-        '策略1', '策略2', '策略3', 'BBI', 'MA60', '波动率'
+        '策略1', '策略2', '策略3', 'MA20斜率','BBI', 'MA60', '波动率'
     ]
     existing_cols = [c for c in target_columns if c in df.columns]
     df = df[existing_cols]
@@ -396,7 +397,7 @@ if __name__ == '__main__':
 
     if all_results:
         final_df = pd.DataFrame(all_results)
-        cols_order = ['股票代码', '股票简称', '主营行业', '地区', '类型', '日期', '收盘价', '策略1', '策略2','策略3', 'BBI', 'MA60', '波动率']
+        cols_order = ['股票代码', '股票简称', '主营行业', '地区', '类型', '日期', '收盘价', '策略1', '策略2','策略3', 'MA20斜率','BBI', 'MA60', '波动率']
         cols_order = [c for c in cols_order if c in final_df.columns]
         final_df = final_df[cols_order]
         final_df.sort_values(by=['日期', '股票代码'], inplace=True)
