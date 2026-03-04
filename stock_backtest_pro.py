@@ -79,13 +79,20 @@ def process_single_stock_file(args):
         # ========== 最终买点 ==========
         df['BUY_SIGNAL'] = cond_angle & cond_trend & cond_power & cond_vol & cond_macd
 
-        # ========== 最终卖点 ==========
+       # ========== 最终卖点 ==========
         # CROSS(MA10, C) -> 昨天收盘价>=昨天MA10，今天收盘价<今天MA10 (跌破10日线)
         cross_ma10 = (df['收盘'].shift(1) >= df['MA10'].shift(1)) & (df['收盘'] < df['MA10'])
         # (MA20_ANGLE < 0 AND C < MA20) -> 均线拐头向下且股价在20日线下
         ma20_bad = (df['MA20_ANGLE'] < 0) & (df['收盘'] < df['MA20'])
         
         df['SELL_SIGNAL'] = cross_ma10 | ma20_bad
+
+        # ========== 涨跌停判定 (新增) ==========
+        stock_code = file.replace('.csv', '')
+        limit_threshold = 19.8 if stock_code.startswith('688') or stock_code.startswith('30') else 9.8
+        df['pct_change'] = (df['收盘'] / df['收盘'].shift(1) - 1) * 100
+        df['is_limit_up'] = df['pct_change'] >= limit_threshold
+        df['is_limit_down'] = df['pct_change'] <= -limit_threshold
 
         # --- 截取用户指定的回测时间段 ---
         mask = (df['日期'] >= pd.to_datetime(start_date)) & (df['日期'] <= pd.to_datetime(end_date))
@@ -94,9 +101,10 @@ def process_single_stock_file(args):
         if df.empty:
             return None
 
-        df['股票代码'] = file.replace('.csv', '')
-        # 修改后：
-        return df[['日期', '股票代码', '开盘', '收盘', '最高', '最低', '成交量', 'MA20_ANGLE', 'BUY_SIGNAL', 'SELL_SIGNAL']].copy()
+        df['股票代码'] = stock_code
+        # 修改后：把 is_limit_up 和 is_limit_down 一起传给回测引擎
+        return df[['日期', '股票代码', '开盘', '收盘', '最高', '最低', '成交量', 'MA20_ANGLE', 'BUY_SIGNAL', 'SELL_SIGNAL', 'is_limit_up', 'is_limit_down']].copy()
+       
         
     except Exception as e:
         return None
@@ -132,6 +140,8 @@ def run_backtest(stock_files, start_date, end_date, take_profit_pct, stop_loss_p
         sell_signal = row['SELL_SIGNAL']
         open_price = row['开盘']
         close_price = row['收盘']
+        is_limit_up = row['is_limit_up']       # <--- 新增
+        is_limit_down = row['is_limit_down']   # <--- 新增
 
         # --- 1. 检查卖出条件 ---
         if stock_code in holdings:
@@ -151,6 +161,8 @@ def run_backtest(stock_files, start_date, end_date, take_profit_pct, stop_loss_p
                 sell_reason = "策略S点(破均线)"
             
             if sell_reason:
+                if is_limit_down:
+                    continue # 🔒【新增】跌停板锁死，今天想卖也卖不掉，硬扛到明天！
                 shares_to_sell = holding_info['shares']
                 sell_price = open_price if sell_reason in ["止盈", "止损"] else close_price
                 proceeds = shares_to_sell * sell_price
@@ -175,6 +187,8 @@ def run_backtest(stock_files, start_date, end_date, take_profit_pct, stop_loss_p
 
         # --- 2. 检查买入条件 ---
         if buy_signal and stock_code not in holdings:
+            if is_limit_up:
+                continue # 🚫【新增】涨停板封死，买不进，直接跳过寻找下一个！
             stock_code_str = str(stock_code).zfill(6)
             price_to_buy = close_price 
             

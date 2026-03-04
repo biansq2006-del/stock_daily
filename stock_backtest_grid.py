@@ -79,7 +79,13 @@ def process_single_stock_file(args):
         cross_ma10 = (df['收盘'].shift(1) >= df['MA10'].shift(1)) & (df['收盘'] < df['MA10'])
         ma20_bad = (df['MA20_ANGLE'] < 0) & (df['收盘'] < df['MA20'])
         df['SELL_SIGNAL'] = cross_ma10 | ma20_bad
-
+        # =================【新增：涨跌停判定】=================
+        stock_code = file.replace('.csv', '')
+        limit_threshold = 19.8 if stock_code.startswith('688') or stock_code.startswith('30') else 9.8
+        df['pct_change'] = (df['收盘'] / df['收盘'].shift(1) - 1) * 100
+        df['is_limit_up'] = df['pct_change'] >= limit_threshold
+        df['is_limit_down'] = df['pct_change'] <= -limit_threshold
+        # ====================================================
         mask = (df['日期'] >= pd.to_datetime(start_date)) & (df['日期'] <= pd.to_datetime(end_date))
         df = df[mask]
         
@@ -88,9 +94,10 @@ def process_single_stock_file(args):
         df['股票代码'] = file.replace('.csv', '')
         
         # 英文列名以便于极速迭代器 itertuples 调用
-        df = df[['日期', '股票代码', '开盘', '收盘', 'MA20_ANGLE', 'BASE_BUY', 'SELL_SIGNAL']]
-        df.columns = ['date', 'code', 'open', 'close', 'angle', 'base_buy', 'sell_signal']
+        df = df[['日期', '股票代码', '开盘', '收盘', 'MA20_ANGLE', 'BASE_BUY', 'SELL_SIGNAL', 'is_limit_up', 'is_limit_down']]
+        df.columns = ['date', 'code', 'open', 'close', 'angle', 'base_buy', 'sell_signal', 'is_limit_up', 'is_limit_down']
         return df.copy()
+
         
     except Exception:
         return None
@@ -148,7 +155,8 @@ def run_grid_search():
             code = row.code
             close_price = row.close
             open_price = row.open
-            
+            is_limit_up = row.is_limit_up
+            is_limit_down = row.is_limit_down
             # 更新股票的最新价格
             last_close_prices[code] = close_price
             
@@ -167,6 +175,9 @@ def run_grid_search():
                     sell_reason = True
                     
                 if sell_reason:
+                    # 【新增跌停拦截】
+                    if is_limit_down:
+                        continue # 🔒跌停无法卖出，强制继续持有
                     # 判断是以开盘价还是收盘价卖出
                     if open_price != 0 and (profit_ratio >= tp_ratio or profit_ratio <= -sl_ratio):
                         sell_price = open_price
@@ -187,6 +198,9 @@ def run_grid_search():
             buy_signal = row.base_buy and (row.angle > slope_thresh)
             
             if buy_signal and code not in holdings:
+                # 【新增涨停拦截】
+                if is_limit_up:
+                    continue # 🚫涨停无法买入，直接跳过
                 code_str = str(code).zfill(6)
                 min_lot = 200 if code_str.startswith('688') else 100
                 
